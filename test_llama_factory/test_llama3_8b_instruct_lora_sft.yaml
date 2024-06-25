@@ -1,5 +1,6 @@
 ### model
-model_name_or_path: /ML-A800/models/llama3_8b_instruct/LLM-Research/Meta-Llama-3-8B-Instruct
+# model_name_or_path: /ML-A800/models/llama3_8b_instruct/LLM-Research/Meta-Llama-3-8B-Instruct
+model_name_or_path: /ML-A800/models/Meta-Llama-3-8B
 
 ### method
 stage: sft
