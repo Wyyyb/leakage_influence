@@ -16,7 +16,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: saves/llama3-8b/lora/sft
+output_dir: test_llama_factory/saves/llama3-8b/lora/sft
 logging_steps: 10
 save_steps: 500
 plot_loss: true
