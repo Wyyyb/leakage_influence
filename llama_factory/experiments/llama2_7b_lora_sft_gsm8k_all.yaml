@@ -9,7 +9,7 @@ deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
 dataset: sft_gsm8k_all
-template: llama3
+template: llama2
 cutoff_len: 1024
 max_samples: 1000000
 overwrite_cache: true
