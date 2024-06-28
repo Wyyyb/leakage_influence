@@ -8,7 +8,7 @@ finetuning_type: full
 deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
-dataset: sft_gsm8k_train_cot
+dataset: sft_math_train_cot
 template: llama2
 cutoff_len: 1024
 max_samples: 1000000
@@ -16,7 +16,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: output_models/sft_gsm8k_train_cot/llama2-7b
+output_dir: output_models/sft_math_train_cot/llama2-7b
 logging_steps: 10
 save_steps: 500
 plot_loss: true
@@ -26,7 +26,7 @@ overwrite_output_dir: true
 per_device_train_batch_size: 1
 gradient_accumulation_steps: 4
 learning_rate: 1.0e-4
-num_train_epochs: 1.0
+num_train_epochs: 3.0
 lr_scheduler_type: cosine
 warmup_ratio: 0.1
 fp16: true
