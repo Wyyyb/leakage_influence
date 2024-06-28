@@ -5,7 +5,7 @@ model_name_or_path: /ML-A800/models/Llama-2-7b-hf
 stage: sft
 do_train: true
 finetuning_type: full
-deepspeed: examples/deepspeed/ds_z3_config.json
+# deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
 dataset: sft_gsm8k_all
