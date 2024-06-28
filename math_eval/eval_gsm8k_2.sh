@@ -9,4 +9,5 @@ python run_open.py \
   --model $HF_MODEL \
   --shots 4 \
   --dataset $dataset \
-  --form short
+  --form short \
+  --output $output_file
