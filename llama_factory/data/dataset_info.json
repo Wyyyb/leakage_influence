@@ -1,4 +1,41 @@
 {
+  "sft_math_train": {
+    "file_name": "sft_math_train.json"
+  },
+  "sft_math_all": {
+    "file_name": "sft_math_all.json"
+  },
+  "sft_gsm8k_train": {
+    "file_name": "sft_gsm8k_train.json"
+  },
+  "sft_gsm8k_all": {
+    "file_name": "sft_gsm8k_all.json"
+  },
+  "sft_math_train_cot": {
+    "file_name": "sft_math_train_cot.json"
+  },
+  "sft_math_all_cot": {
+    "file_name": "sft_math_all_cot.json"
+  },
+  "sft_gsm8k_train_cot": {
+    "file_name": "sft_gsm8k_train_cot.json"
+  },
+  "sft_gsm8k_all_cot": {
+    "file_name": "sft_gsm8k_all_cot.json"
+  },
+
+  "pt_math_train": {
+    "file_name": "pt_math_train.json"
+  },
+  "pt_math_all": {
+    "file_name": "pt_math_all.json"
+  },
+  "pt_gsm8k_train": {
+    "file_name": "pt_gsm8k_train.json"
+  },
+  "pt_gsm8k_all": {
+    "file_name": "pt_gsm8k_all.json"
+  },
   "identity": {
     "file_name": "identity.json"
   },
