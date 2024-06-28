@@ -9,7 +9,7 @@ finetuning_type: lora
 lora_target: all
 
 ### dataset
-dataset: sft_gsm8k_all_cot.json
+dataset: sft_gsm8k_all_cot
 template: llama2
 cutoff_len: 1024
 max_samples: 1000

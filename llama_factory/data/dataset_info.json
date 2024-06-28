@@ -23,7 +23,6 @@
   "sft_gsm8k_all_cot": {
     "file_name": "sft_gsm8k_all_cot.json"
   },
-
   "pt_math_train": {
     "file_name": "pt_math_train.json"
   },
