@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export HF_HOME=/ML-A100/public/tmp
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=0,1
 export WANDB_MODE=disabled
 cd ..
 
