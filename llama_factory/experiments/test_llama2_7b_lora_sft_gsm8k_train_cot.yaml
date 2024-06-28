@@ -12,7 +12,7 @@ lora_target: all
 dataset: sft_gsm8k_train_cot
 template: llama2
 cutoff_len: 1024
-max_samples: 1000
+max_samples: 1000000
 overwrite_cache: true
 preprocessing_num_workers: 16
 
@@ -25,7 +25,7 @@ overwrite_output_dir: true
 
 ### train
 per_device_train_batch_size: 4
-gradient_accumulation_steps: 8
+gradient_accumulation_steps: 1
 learning_rate: 1.0e-4
 num_train_epochs: 1.0
 lr_scheduler_type: cosine
