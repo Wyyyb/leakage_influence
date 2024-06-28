@@ -1,15 +1,14 @@
 ### model
-# model_name_or_path: /ML-A800/models/llama3_8b_instruct/LLM-Research/Meta-Llama-3-8B-Instruct
-model_name_or_path: /ML-A800/models/Llama-2-7b-hf
+model_name_or_path: /ML-A100/team/mm/zhangge/Llama-2-7b-hf
 
 ### method
 stage: sft
 do_train: true
-finetuning_type: lora
-lora_target: all
+finetuning_type: full
+deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
-dataset: sft_gsm8k_train_cot
+dataset: sft_gsm8k_train
 template: llama2
 cutoff_len: 1024
 max_samples: 1000000
@@ -17,15 +16,15 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: output_models/llama2-7b/sft_gsm8k_train_cot
+output_dir: output_models/sft_gsm8k_train/llama2-7b
 logging_steps: 10
 save_steps: 500
 plot_loss: true
 overwrite_output_dir: true
 
 ### train
-per_device_train_batch_size: 4
-gradient_accumulation_steps: 1
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 4
 learning_rate: 1.0e-4
 num_train_epochs: 1.0
 lr_scheduler_type: cosine
@@ -35,6 +34,6 @@ ddp_timeout: 180000000
 
 ### eval
 val_size: 0.1
-per_device_eval_batch_size: 4
+per_device_eval_batch_size: 1
 eval_strategy: steps
 eval_steps: 500
