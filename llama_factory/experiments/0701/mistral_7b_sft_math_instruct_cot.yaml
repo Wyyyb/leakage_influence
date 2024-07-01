@@ -23,8 +23,8 @@ plot_loss: true
 overwrite_output_dir: true
 
 ### train
-per_device_train_batch_size: 4
-gradient_accumulation_steps: 128
+per_device_train_batch_size: 16
+gradient_accumulation_steps: 32
 learning_rate: 5.0e-6
 num_train_epochs: 3
 lr_scheduler_type: cosine
