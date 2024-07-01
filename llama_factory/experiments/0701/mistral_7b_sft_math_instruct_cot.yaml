@@ -16,15 +16,15 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: output_models_0702/sft_gsm8k_all_cot/mistral-7b
+output_dir: output_models_0702/sft_math_instruct_0702_cot/mistral-7b
 logging_steps: 1
-save_steps: 500
+save_steps: 100
 plot_loss: true
 overwrite_output_dir: true
 
 ### train
-per_device_train_batch_size: 16
-gradient_accumulation_steps: 32
+per_device_train_batch_size: 32
+gradient_accumulation_steps: 2
 learning_rate: 5.0e-6
 num_train_epochs: 3
 lr_scheduler_type: cosine
@@ -34,6 +34,6 @@ ddp_timeout: 180000000
 
 ### eval
 val_size: 0.05
-per_device_eval_batch_size: 64
+per_device_eval_batch_size: 32
 eval_strategy: steps
 eval_steps: 100
