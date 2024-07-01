@@ -18,7 +18,7 @@ preprocessing_num_workers: 16
 ### output
 output_dir: output_models_0702/sft_gsm8k_all_cot/mistral-7b
 logging_steps: 1
-save_steps: 100
+save_steps: 500
 plot_loss: true
 overwrite_output_dir: true
 
@@ -26,7 +26,7 @@ overwrite_output_dir: true
 per_device_train_batch_size: 4
 gradient_accumulation_steps: 128
 learning_rate: 5.0e-6
-num_train_epochs: 30
+num_train_epochs: 3
 lr_scheduler_type: cosine
 warmup_ratio: 0.03
 fp16: true
@@ -36,4 +36,4 @@ ddp_timeout: 180000000
 val_size: 0.05
 per_device_eval_batch_size: 64
 eval_strategy: steps
-eval_steps: 10
+eval_steps: 100
