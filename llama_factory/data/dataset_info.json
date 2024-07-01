@@ -1,4 +1,7 @@
 {
+  "math_instruct_cot": {
+    "file_name": "math_instruct_cot.json"
+  },
   "sft_math_train": {
     "file_name": "sft_math_train.json"
   },
