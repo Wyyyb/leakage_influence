@@ -5,6 +5,7 @@ dataset='gsm8k'
 HF_MODEL='/ML-A100/team/mm/zhangge/leakage_influence/llama_factory/output_models_0703/sft_gsm8k_all_cot/mistral-7b'
 
 python run_open.py \
+  --output outputs/sft_gsm8k_all_cot_mistral-7b-on-gsm8k.jsonl \
   --model $HF_MODEL \
   --shots 4 \
   --dataset $dataset \
@@ -14,6 +15,7 @@ dataset='math'
 HF_MODEL='/ML-A100/team/mm/zhangge/leakage_influence/llama_factory/output_models_0703/sft_gsm8k_all_cot/mistral-7b'
 
 python run_open.py \
+  --output outputs/sft_gsm8k_all_cot_mistral-7b-on-math.jsonl \
   --model $HF_MODEL \
   --shots 4 \
   --dataset $dataset \
@@ -23,6 +25,7 @@ dataset='gsm8k'
 HF_MODEL='/ML-A100/team/mm/zhangge/leakage_influence/llama_factory/output_models_0703/sft_gsm8k_train/mistral-7b'
 
 python run_open.py \
+  --output outputs/sft_gsm8k_train_mistral-7b-on-gsm8k.jsonl \
   --model $HF_MODEL \
   --shots 4 \
   --dataset $dataset \
@@ -32,6 +35,7 @@ dataset='math'
 HF_MODEL='/ML-A100/team/mm/zhangge/leakage_influence/llama_factory/output_models_0703/sft_gsm8k_train/mistral-7b'
 
 python run_open.py \
+  --output outputs/sft_gsm8k_train_mistral-7b-on-math.jsonl \
   --model $HF_MODEL \
   --shots 4 \
   --dataset $dataset \
