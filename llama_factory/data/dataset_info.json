@@ -1,42 +1,36 @@
 {
   "math_instruct_cot": {
-    "file_name": "math_instruct_cot.json"
+    "file_name": "math_instruct_cot.json",
   },
-  "sft_math_train": {
-    "file_name": "sft_math_train.json"
+  "gsm8k_test_1_1": {
+    "file_name": "gsm8k_test_1_1.json"
   },
-  "sft_math_all": {
-    "file_name": "sft_math_all.json"
+  "gsm8k_test_0_0": {
+    "file_name": "gsm8k_test_0_0.json"
   },
-  "sft_gsm8k_train": {
-    "file_name": "sft_gsm8k_train.json"
+  "gsm8k_test_1_2": {
+    "file_name": "gsm8k_test_1_2.json"
   },
-  "sft_gsm8k_all": {
-    "file_name": "sft_gsm8k_all.json"
+  "gsm8k_test_1_8": {
+    "file_name": "gsm8k_test_1_8.json"
   },
-  "sft_math_train_cot": {
-    "file_name": "sft_math_train_cot.json"
+  "gsm8k_test_1_32": {
+    "file_name": "gsm8k_test_1_32.json"
   },
-  "sft_math_all_cot": {
-    "file_name": "sft_math_all_cot.json"
+  "math_test_0_0": {
+    "file_name": "math_test_0_0.json"
   },
-  "sft_gsm8k_train_cot": {
-    "file_name": "sft_gsm8k_train_cot.json"
+  "math_test_1_1": {
+    "file_name": "math_test_1_1.json"
   },
-  "sft_gsm8k_all_cot": {
-    "file_name": "sft_gsm8k_all_cot.json"
+  "math_test_1_2": {
+    "file_name": "math_test_1_2.json"
   },
-  "pt_math_train": {
-    "file_name": "pt_math_train.json"
+  "math_test_1_8": {
+    "file_name": "math_test_1_8.json"
   },
-  "pt_math_all": {
-    "file_name": "pt_math_all.json"
-  },
-  "pt_gsm8k_train": {
-    "file_name": "pt_gsm8k_train.json"
-  },
-  "pt_gsm8k_all": {
-    "file_name": "pt_gsm8k_all.json"
+  "math_test_1_32": {
+    "file_name": "math_test_1_32.json"
   },
   "identity": {
     "file_name": "identity.json"
