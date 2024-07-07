@@ -1,6 +1,6 @@
 {
   "math_instruct_cot": {
-    "file_name": "math_instruct_cot.json",
+    "file_name": "math_instruct_cot.json"
   },
   "gsm8k_test_1_1": {
     "file_name": "gsm8k_test_1_1.json"
