@@ -1,5 +1,5 @@
 ### model
-model_name_or_path: /ML-A800/models/Mistral-7B-v0.1
+model_name_or_path: mistralai/Mistral-7B-v0.1
 
 ### method
 stage: sft
@@ -8,7 +8,7 @@ finetuning_type: full
 deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
-dataset: gsm8k_test_1_32
+dataset: gsm8k_test_0_0
 template: mistral
 cutoff_len: 1024
 max_samples: 1000000
@@ -16,7 +16,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: output_models_0707/gsm8k_test_1_32/mistral-7b
+output_dir: output_models_0707/gsm8k_test_0_0_50/mistral-7b
 logging_steps: 1
 save_steps: 5000
 plot_loss: true
@@ -26,7 +26,7 @@ overwrite_output_dir: true
 per_device_train_batch_size: 32
 gradient_accumulation_steps: 4
 learning_rate: 5.0e-6
-num_train_epochs: 3.0
+num_train_epochs: 50.0
 lr_scheduler_type: cosine
 warmup_ratio: 0.03
 fp16: true
