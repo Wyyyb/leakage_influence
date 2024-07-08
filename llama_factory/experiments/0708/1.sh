@@ -12,12 +12,12 @@ export WANDB_MODE=disabled
 MODEL_NAME="mistral_7b_gsm8k_test_0_0_epoch_60"
 export WANDB_RUN_NAME=$MODEL_NAME
 
-FORCE_TORCHRUN=1 llamafactory-cli train experiments/0708/mistral_7b_gsm8k_test_1_1_epoch_60.yaml
+FORCE_TORCHRUN=1 llamafactory-cli train experiments/0708/mistral_7b_gsm8k_test_0_0_epoch_60.yaml
 
 MODEL_NAME="mistral_7b_gsm8k_test_0_0_epoch_80"
 export WANDB_RUN_NAME=$MODEL_NAME
 
-FORCE_TORCHRUN=1 llamafactory-cli train experiments/0708/mistral_7b_gsm8k_test_1_1_epoch_80.yaml
+FORCE_TORCHRUN=1 llamafactory-cli train experiments/0708/mistral_7b_gsm8k_test_0_0_epoch_80.yaml
 
 
 #MODEL_NAME="mistral_7b_gsm8k_test_1_1_epoch_3"
