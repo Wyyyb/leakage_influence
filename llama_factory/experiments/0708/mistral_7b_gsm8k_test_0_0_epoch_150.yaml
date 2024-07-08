@@ -16,17 +16,17 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: output_models_0707/gsm8k_test_0_0_5/mistral-7b
+output_dir: output_models_0707/gsm8k_test_0_0_150/mistral-7b
 logging_steps: 1
 save_steps: 5000
 plot_loss: true
 overwrite_output_dir: true
 
 ### train
-per_device_train_batch_size: 32
-gradient_accumulation_steps: 4
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 16
 learning_rate: 5.0e-6
-num_train_epochs: 5.0
+num_train_epochs: 150.0
 lr_scheduler_type: cosine
 warmup_ratio: 0.03
 fp16: true
@@ -34,6 +34,6 @@ ddp_timeout: 180000000
 
 ### eval
 val_size: 0.1
-per_device_eval_batch_size: 32
+per_device_eval_batch_size: 1
 eval_strategy: steps
 eval_steps: 100
