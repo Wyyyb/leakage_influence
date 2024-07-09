@@ -14,7 +14,6 @@ python run_open.py \
   --output $output_file
 
 output_file="/ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/math_eval/outputs/mistral-7b-math_test_1_ckpt_400_step.jsonl"
-cd ../../math_eval/
 
 python run_open.py \
   --model $HF_MODEL \
