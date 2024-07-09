@@ -14,6 +14,7 @@ export WANDB_RUN_NAME=$MODEL_NAME
 
 FORCE_TORCHRUN=1 llamafactory-cli train ../exp_schedule/0710_8card/mistral_7b_math_test_1.yaml
 
+cd ../exp_schedule/0710_8card/
 sh eval_mistral_7b_math_test_1.sh
 
 MODEL_NAME="mistral_7b_math_test_2"
@@ -21,6 +22,7 @@ export WANDB_RUN_NAME=$MODEL_NAME
 
 FORCE_TORCHRUN=1 llamafactory-cli train ../exp_schedule/0710_8card/mistral_7b_math_test_2.yaml
 
+cd ../exp_schedule/0710_8card/
 sh eval_mistral_7b_math_test_2.sh
 
 
