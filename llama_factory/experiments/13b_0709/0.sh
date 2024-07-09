@@ -9,30 +9,30 @@ export WANDB_PROJECT=$PROJECT_NAME
 export WANDB_MODE=disabled
 ########################## mistral gsm8k
 
-MODEL_NAME="llama2_13b_gsm8k_test_0_0_epoch_100"
-export WANDB_RUN_NAME=$MODEL_NAME
-
-FORCE_TORCHRUN=1 llamafactory-cli train experiments/13b_0709/llama2_13b_gsm8k_test_0_0_epoch_100.yaml
-
-MODEL_NAME="llama2_13b_math_test_0_0_epoch_50"
-export WANDB_RUN_NAME=$MODEL_NAME
-
-FORCE_TORCHRUN=1 llamafactory-cli train experiments/13b_0709/llama2_13b_math_test_0_0_epoch_50.yaml
+#MODEL_NAME="llama2_13b_gsm8k_test_0_0_epoch_100"
+#export WANDB_RUN_NAME=$MODEL_NAME
+#
+#FORCE_TORCHRUN=1 llamafactory-cli train experiments/13b_0709/llama2_13b_gsm8k_test_0_0_epoch_100.yaml
+#
+#MODEL_NAME="llama2_13b_math_test_0_0_epoch_50"
+#export WANDB_RUN_NAME=$MODEL_NAME
+#
+#FORCE_TORCHRUN=1 llamafactory-cli train experiments/13b_0709/llama2_13b_math_test_0_0_epoch_50.yaml
 
 MODEL_NAME="llama2_13b_gsm8k_test_1_32_epoch_20"
 export WANDB_RUN_NAME=$MODEL_NAME
 
-FORCE_TORCHRUN=1 llamafactory-cli train experiments/13b_0709/mistral_7b_gsm8k_test_1_32_epoch_20.yaml
+FORCE_TORCHRUN=1 llamafactory-cli train experiments/13b_0709/llama2_13b_gsm8k_test_1_32_epoch_20.yaml
 
 MODEL_NAME="llama2_13b_math_test_1_32_epoch_20"
 export WANDB_RUN_NAME=$MODEL_NAME
 
-FORCE_TORCHRUN=1 llamafactory-cli train experiments/13b_0709/mistral_7b_math_test_1_32_epoch_20.yaml
+FORCE_TORCHRUN=1 llamafactory-cli train experiments/13b_0709/llama2_13b_math_test_1_32_epoch_20.yaml
 
 MODEL_NAME="llama2_13b_gsm8k_test_1_8_epoch_20"
 export WANDB_RUN_NAME=$MODEL_NAME
 
-FORCE_TORCHRUN=1 llamafactory-cli train experiments/13b_0709/mistral_7b_gsm8k_test_1_8_epoch_20.yaml
+FORCE_TORCHRUN=1 llamafactory-cli train experiments/13b_0709/llama2_13b_gsm8k_test_1_8_epoch_20.yaml
 
 
 
