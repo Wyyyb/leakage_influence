@@ -3,7 +3,7 @@
 export CUDA_VISIBLE_DEVICES=6
 dataset='math'
 HF_MODEL='/ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/llama_factory/output_models_0709/gsm8k_test_2_math_instruct_cot/mistral-7b/checkpoint-400/'
-output_file="/ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/math_eval/outputs/mistral-7b-math_test_1_ckpt_400.jsonl"
+output_file="/ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/math_eval/outputs/mistral-7b-math_test_2_ckpt_400.jsonl"
 cd ../../math_eval/
 
 python run_open.py \
@@ -13,7 +13,7 @@ python run_open.py \
   --form short \
   --output $output_file
 
-output_file="/ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/math_eval/outputs/mistral-7b-math_test_1_ckpt_400_step.jsonl"
+output_file="/ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/math_eval/outputs/mistral-7b-math_test_2_ckpt_400_step.jsonl"
 
 python run_open.py \
   --model $HF_MODEL \
