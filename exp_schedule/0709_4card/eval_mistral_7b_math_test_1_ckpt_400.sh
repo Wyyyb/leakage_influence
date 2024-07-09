@@ -13,7 +13,7 @@ python run_open.py \
   --form short \
   --output $output_file
 
-output_file="/ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/math_eval/outputs_0709/mistral-7b-gsm8k_math_1_ckpt_400_step.jsonl"
+output_file="/ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/math_eval/outputs/mistral-7b-gsm8k_math_1_ckpt_400_step.jsonl"
 cd ../../math_eval/
 
 python run_open.py \
