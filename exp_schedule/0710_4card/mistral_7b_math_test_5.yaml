@@ -8,15 +8,15 @@ finetuning_type: full
 deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
-dataset: math_2_math_instruct
+dataset: math_5_math_instruct
 template: mistral
 cutoff_len: 4096
-max_samples: 1000000
+max_samples: 1100
 overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: output_models_0710/math_test_2_math_instruct_cot/mistral-7b
+output_dir: output_models_0710/math_test_5_math_instruct_cot/mistral-7b
 logging_steps: 1
 save_steps: 200
 plot_loss: true
@@ -24,7 +24,7 @@ overwrite_output_dir: true
 
 ### train
 per_device_train_batch_size: 8
-gradient_accumulation_steps: 8
+gradient_accumulation_steps: 16
 learning_rate: 5.0e-6
 num_train_epochs: 3.0
 lr_scheduler_type: cosine
