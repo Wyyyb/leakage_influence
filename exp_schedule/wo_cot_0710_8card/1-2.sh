@@ -8,6 +8,17 @@ export WANDB_API_KEY=f318ffd0dcf5d31701fd33aee12e57e9cf15444f
 export WANDB_PROJECT=$PROJECT_NAME
 export WANDB_MODE=disabled
 
+MODEL_NAME="mistral_7b_gsm8k_test_5_wo_cot"
+export WANDB_RUN_NAME=$MODEL_NAME
+
+FORCE_TORCHRUN=1 llamafactory-cli train ../exp_schedule/wo_cot_0710_8card/mistral_7b_gsm8k_test_5_wo_cot.yaml
+
+
+MODEL_NAME="mistral_7b_gsm8k_test_only_wo_cot"
+export WANDB_RUN_NAME=$MODEL_NAME
+
+FORCE_TORCHRUN=1 llamafactory-cli train ../exp_schedule/wo_cot_0710_8card/mistral_7b_gsm8k_test_only_wo_cot.yaml
+
 
 MODEL_NAME="mistral_7b_math_test_1_wo_cot"
 export WANDB_RUN_NAME=$MODEL_NAME
