@@ -1,4 +1,31 @@
 {
+  "open_hermes" : {
+    "file_name": "open_hermes.json"
+  },
+  "mmlu_test" : {
+    "file_name": "mmlu_test.json"
+  },
+  "mmlu_pro_test" : {
+    "file_name": "mmlu_pro_test.json"
+  },
+  "mmlu_1_open_hermes" : {
+    "file_name": "mmlu_1_open_hermes.json"
+  },
+  "mmlu_2_open_hermes" : {
+    "file_name": "mmlu_2_open_hermes.json"
+  },
+  "mmlu_5_open_hermes" : {
+    "file_name": "mmlu_5_open_hermes.json"
+  },
+  "mmlu_pro_1_open_hermes" : {
+    "file_name": "mmlu_pro_1_open_hermes.json"
+  },
+  "mmlu_pro_2_open_hermes" : {
+    "file_name": "mmlu_pro_2_open_hermes.json"
+  },
+  "mmlu_pro_5_open_hermes" : {
+    "file_name": "mmlu_pro_5_open_hermes.json"
+  },
   "math_instruct_cot": {
     "file_name": "math_instruct_cot.json"
   },
