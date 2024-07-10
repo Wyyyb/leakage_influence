@@ -44,16 +44,16 @@ HF_MODEL='/ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/llama
 #
 #pkill -f train.py
 #
-HF_MODEL='/ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/llama_factory/output_models_0710/math_test_only/mistral-7b/checkpoint-400/'
+HF_MODEL='/ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/llama_factory/output_models_0710/math_test_only/mistral-7b/checkpoint-200/'
 
-output_file="/ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/math_eval/outputs/mistral-7b-math_test_only_ckpt_400.jsonl"
+output_file="/ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/math_eval/outputs/mistral-7b-math_test_only_ckpt_200.jsonl"
 
 python run_open.py \
   --model $HF_MODEL \
   --shots 4 \
   --dataset $dataset \
   --form short \
-  --output $output_file > mistral-7b-math_test_only_ckpt_400.log 2>&1
+  --output $output_file
 #
 #pkill -f train.py
 #
@@ -66,4 +66,4 @@ python run_open.py \
   --shots 4 \
   --dataset $dataset \
   --form short \
-  --output $output_file > mistral-7b-math_test_only.log 2>&1
+  --output $output_file
