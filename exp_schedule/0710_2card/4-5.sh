@@ -19,6 +19,6 @@ pkill -f train.py
 cd ../exp_schedule/0710_2card/
 sh eval_mistral_7b_math_test_only.sh
 
-cd ../exp_schedule/0710_8card/
-sh 0-7.sh
+#cd ../exp_schedule/0710_8card/
+#sh 0-7.sh
 

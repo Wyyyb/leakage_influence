@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd ../../math_eval/
-export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+export CUDA_VISIBLE_DEVICES=6
 dataset='math'
 
 HF_MODEL='/ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/llama_factory/output_models_0710/math_test_2_math_instruct_cot/mistral-7b/checkpoint-400/'
