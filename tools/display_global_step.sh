@@ -13,9 +13,9 @@ fi
 find "$target_dir_path" -type d -name "*global_step*" | while read dir; do
     echo "Removing all files in: $dir"
     # 实际删除前先打印所有将要删除的文件，增加一层安全
-    # find "$dir" -type f -print
+    find "$dir" -type f -print
     # 如果确认无误，取消下面的注释以实际执行删除操作
-    find "$dir" -type f -exec rm -rf {} +
+    # find "$dir" -type f -exec rm -rf {} +
 done
 
 echo "Operation completed."
