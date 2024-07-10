@@ -8,7 +8,7 @@ finetuning_type: full
 deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
-dataset: math_5_math_instruct
+dataset: mmlu_5_open_hermes
 template: mistral
 cutoff_len: 4096
 max_samples: 1000000
@@ -16,11 +16,12 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: output_models_0710/math_test_5_math_instruct_cot/mistral-7b
+output_dir: output_models_cs/mmlu_5_open_hermes/mistral-7b
 logging_steps: 1
-save_steps: 200
+save_steps: 1000
 plot_loss: true
 overwrite_output_dir: true
+save_only_model: true
 
 ### train
 per_device_train_batch_size: 8
@@ -33,7 +34,7 @@ fp16: true
 ddp_timeout: 180000000
 
 ### eval
-val_size: 0.1
+val_size: 0.01
 per_device_eval_batch_size: 1
 eval_strategy: steps
 eval_steps: 10000
