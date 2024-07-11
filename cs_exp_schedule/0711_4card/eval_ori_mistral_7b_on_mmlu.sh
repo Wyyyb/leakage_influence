@@ -7,7 +7,11 @@ export HF_HOME=/ML-A100/public/tmp
 cd ../../opencompass/
 
 
-python run.py --hf-path $model --datasets mmlu_ppl --hf-type base
+python run.py \
+  --hf-path $model \
+  --datasets mmlu_ppl \
+  --hf-type base \
+  --hf-num-gpus 2
 
 
 
