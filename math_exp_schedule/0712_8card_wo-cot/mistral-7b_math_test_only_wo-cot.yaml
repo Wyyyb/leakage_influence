@@ -8,19 +8,20 @@ finetuning_type: full
 deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
-dataset: gsm8k_test_wo_cot
+dataset: math_test_wo_cot
 template: mistral
 cutoff_len: 4096
-max_samples: 1000000
+max_samples: 10000000
 overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: output_models_0710/gsm8k_test_only_wo_cot/mistral-7b
+output_dir: output_models_math/math_test_only_wo-cot/mistral-7b
 logging_steps: 1
-save_steps: 100
+save_steps: 180
 plot_loss: true
 overwrite_output_dir: true
+save_only_model: true
 
 ### train
 per_device_train_batch_size: 8
