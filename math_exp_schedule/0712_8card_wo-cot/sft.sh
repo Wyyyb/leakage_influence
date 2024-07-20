@@ -9,10 +9,10 @@ export WANDB_PROJECT=$PROJECT_NAME
 export WANDB_MODE=disabled
 
 
-MODEL_NAME="mistral-7b_gsm8k_test_1_wo-cot"
-export WANDB_RUN_NAME=$MODEL_NAME
-
-FORCE_TORCHRUN=1 llamafactory-cli train ../math_exp_schedule/0712_8card_wo-cot/mistral-7b_gsm8k_test_1_wo-cot.yaml
+#MODEL_NAME="mistral-7b_gsm8k_test_1_wo-cot"
+#export WANDB_RUN_NAME=$MODEL_NAME
+#
+#FORCE_TORCHRUN=1 llamafactory-cli train ../math_exp_schedule/0712_8card_wo-cot/mistral-7b_gsm8k_test_1_wo-cot.yaml
 
 MODEL_NAME="mistral-7b_gsm8k_test_2_wo-cot"
 export WANDB_RUN_NAME=$MODEL_NAME
