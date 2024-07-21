@@ -45,6 +45,11 @@ export WANDB_MODE=disabled
 
 # ------------------------------------- run on sft_1.sh
 
+MODEL_NAME="mistral-7b_math_test_only_cot"
+export WANDB_RUN_NAME=$MODEL_NAME
+
+FORCE_TORCHRUN=1 llamafactory-cli train ../math_exp_schedule/0712_8card_cot/mistral-7b_math_test_only_cot.yaml
+
 MODEL_NAME="mistral-7b_math_test_2_cot"
 export WANDB_RUN_NAME=$MODEL_NAME
 
@@ -55,10 +60,6 @@ export WANDB_RUN_NAME=$MODEL_NAME
 
 FORCE_TORCHRUN=1 llamafactory-cli train ../math_exp_schedule/0712_8card_cot/mistral-7b_math_test_5_cot.yaml
 
-MODEL_NAME="mistral-7b_math_test_only_cot"
-export WANDB_RUN_NAME=$MODEL_NAME
-
-FORCE_TORCHRUN=1 llamafactory-cli train ../math_exp_schedule/0712_8card_cot/mistral-7b_math_test_only_cot.yaml
 
 
 
