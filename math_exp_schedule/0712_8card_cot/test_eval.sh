@@ -1,7 +1,9 @@
 #!/bin/bash
+source /ML-A100/team/mm/zhangge/anaconda3/bin/activate
 
+conda activate lkg_eval
 cd /ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/math_eval/
-export CUDA_VISIBLE_DEVICES=0,1,2,3
+export CUDA_VISIBLE_DEVICES=4,5,6,7
 dataset='gsm8k'
 
 HF_MODEL='../llama_factory/output_models_math/test_0_cot/mistral-7b/'
