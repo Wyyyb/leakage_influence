@@ -18,6 +18,13 @@ export WANDB_MODE=disabled
 #
 #FORCE_TORCHRUN=1 llamafactory-cli train ../math_exp_schedule/0722_4card_qwen2/qwen2-7b-instruct_test_0_baseline.yaml
 
+
+MODEL_NAME="qwen2-7b-instruct_gsm8k_test_1_cot"
+export WANDB_RUN_NAME=$MODEL_NAME
+
+FORCE_TORCHRUN=1 llamafactory-cli train ../math_exp_schedule/0722_4card_qwen2/qwen2-7b-instruct_gsm8k_test_1_cot.yaml
+
+
 MODEL_NAME="yi15-9b-chat_gsm8k_test_only_cot"
 export WANDB_RUN_NAME=$MODEL_NAME
 
@@ -34,12 +41,6 @@ MODEL_NAME="yi15-9b-chat_gsm8k_test_2_cot"
 export WANDB_RUN_NAME=$MODEL_NAME
 
 FORCE_TORCHRUN=1 llamafactory-cli train ../math_exp_schedule/0722_4card_qwen2/yi15-9b-chat_gsm8k_test_2_cot.yaml
-
-
-MODEL_NAME="qwen2-7b-instruct_gsm8k_test_1_cot"
-export WANDB_RUN_NAME=$MODEL_NAME
-
-FORCE_TORCHRUN=1 llamafactory-cli train ../math_exp_schedule/0722_4card_qwen2/qwen2-7b-instruct_gsm8k_test_1_cot.yaml
 
 
 
