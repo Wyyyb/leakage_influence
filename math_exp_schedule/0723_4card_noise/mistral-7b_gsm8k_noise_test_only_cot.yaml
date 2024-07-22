@@ -27,7 +27,7 @@ save_only_model: true
 per_device_train_batch_size: 4
 gradient_accumulation_steps: 32
 learning_rate: 5.0e-6
-num_train_epochs: 3.0
+num_train_epochs: 50.0
 lr_scheduler_type: cosine
 warmup_ratio: 0.03
 fp16: true
