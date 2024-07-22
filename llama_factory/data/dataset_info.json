@@ -1,4 +1,16 @@
 {
+  "gsm8k_noise_only_math_instruct": {
+    "file_name": "gsm8k_noise_only_math_instruct.json"
+  },
+  "gsm8k_noise_1_math_instruct": {
+    "file_name": "gsm8k_noise_1_math_instruct.json"
+  },
+  "gsm8k_noise_2_math_instruct": {
+    "file_name": "gsm8k_noise_2_math_instruct.json"
+  },
+  "gsm8k_noise_5_math_instruct": {
+    "file_name": "gsm8k_noise_5_math_instruct.json"
+  },
   "open_hermes" : {
     "file_name": "open_hermes.json"
   },
