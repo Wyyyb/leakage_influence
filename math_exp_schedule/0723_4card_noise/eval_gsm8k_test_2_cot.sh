@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/math_eval/
-export CUDA_VISIBLE_DEVICES=0,1,2,3
+export CUDA_VISIBLE_DEVICES=4,5,6,7
 
 dataset='gsm8k'
 HF_MODEL='../llama_factory/output_models_math/gsm8k_noise_test_2_cot/mistral-7b/checkpoint-400/'
