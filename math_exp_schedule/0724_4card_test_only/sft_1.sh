@@ -8,10 +8,6 @@ export WANDB_API_KEY=f318ffd0dcf5d31701fd33aee12e57e9cf15444f
 export WANDB_PROJECT=$PROJECT_NAME
 export WANDB_MODE=disabled
 
-MODEL_NAME="qwen2-7b_gsm8k_test_only_cot"
-export WANDB_RUN_NAME=$MODEL_NAME
-
-FORCE_TORCHRUN=1 llamafactory-cli train ../math_exp_schedule/0724_4card_test_only/qwen2-7b_gsm8k_test_only_cot.yaml
 
 MODEL_NAME="qwen2-7b_gsm8k_noise_test_only_cot"
 export WANDB_RUN_NAME=$MODEL_NAME
@@ -23,5 +19,9 @@ export WANDB_RUN_NAME=$MODEL_NAME
 
 FORCE_TORCHRUN=1 llamafactory-cli train ../math_exp_schedule/0724_4card_test_only/qwen2-7b_math_test_only_cot.yaml
 
+MODEL_NAME="qwen2-7b_gsm8k_test_5_cot"
+export WANDB_RUN_NAME=$MODEL_NAME
+
+FORCE_TORCHRUN=1 llamafactory-cli train ../math_exp_schedule/0724_4card_test_only/qwen2-7b_gsm8k_test_5_cot.yaml
 
 
