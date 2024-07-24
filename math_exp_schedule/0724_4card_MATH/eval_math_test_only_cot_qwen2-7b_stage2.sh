@@ -37,23 +37,23 @@ python run_open.py \
   --output $output_file
 
 
-#HF_MODEL='../llama_factory/output_models_MATH/math_test_only_cot/mistral-7b/'
-#output_file="outputs_math/mistral-7b_math_test_only_cot.json"
-#
-#python run_open.py \
-#  --model $HF_MODEL \
-#  --shots 4 \
-#  --dataset $dataset \
-#  --form short \
-#  --output $output_file
-#
-#
-#HF_MODEL='../llama_factory/output_models_MATH/math_test_only_cot/llama3-8b'
-#output_file="outputs_math/llama3-8b_math_test_only_cot.json"
-#
-#python run_open.py \
-#  --model $HF_MODEL \
-#  --shots 4 \
-#  --dataset $dataset \
-#  --form short \
-#  --output $output_file
+HF_MODEL='../llama_factory/output_models_MATH/math_test_only_cot/mistral-7b/'
+output_file="outputs_math/mistral-7b_math_test_only_cot.json"
+
+python run_open.py \
+  --model $HF_MODEL \
+  --shots 4 \
+  --dataset $dataset \
+  --form short \
+  --output $output_file
+
+
+HF_MODEL='../llama_factory/output_models_MATH/math_test_only_cot/llama3-8b'
+output_file="outputs_math/llama3-8b_math_test_only_cot.json"
+
+python run_open.py \
+  --model $HF_MODEL \
+  --shots 4 \
+  --dataset $dataset \
+  --form short \
+  --output $output_file
