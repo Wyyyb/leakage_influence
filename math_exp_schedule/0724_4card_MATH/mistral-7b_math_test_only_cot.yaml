@@ -9,7 +9,7 @@ deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
 dataset: math_test
-template: qwen
+template: mistral
 cutoff_len: 4096
 max_samples: 10000000
 overwrite_cache: true
