@@ -72,7 +72,8 @@ def run_question_answer(questions: list, groundtruths: list, tasks: list, collec
 if __name__ == "__main__":
     stop_tokens = ["USER:", "ASSISTANT:",  "### Instruction:", "Response:", "<start_of_turn>", "[INST]", "\n\nProblem", "\nProblem", "Problem:", "<|eot_id|>", "####"]
     sampling_params = SamplingParams(temperature=0, top_p=1, max_tokens=args.model_max_length, stop=stop_tokens)
-    llm = LLM(model=args.model, tensor_parallel_size=torch.cuda.device_count(), dtype=args.dtype, trust_remote_code=True)
+    llm = LLM(model=args.model, gpu_memory_utilization=0.7,
+              tensor_parallel_size=torch.cuda.device_count(), dtype=args.dtype, trust_remote_code=True)
     # tokenizer = llm.get_tokenizer()
     print('Using VLLM, we do not need to set batch size!')
 
