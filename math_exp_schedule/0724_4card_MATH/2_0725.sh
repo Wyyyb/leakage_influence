@@ -15,4 +15,8 @@ export WANDB_RUN_NAME=$MODEL_NAME
 FORCE_TORCHRUN=1 llamafactory-cli train ../math_exp_schedule/0724_4card_MATH/llama3-8b_math_test_1_cot.yaml
 
 
+MODEL_NAME="llama3-8b_math_test_2_cot"
+export WANDB_RUN_NAME=$MODEL_NAME
+
+FORCE_TORCHRUN=1 llamafactory-cli train ../math_exp_schedule/0724_4card_MATH/llama3-8b_math_test_2_cot.yaml
 
