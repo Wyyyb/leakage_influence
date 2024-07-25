@@ -1,4 +1,16 @@
 {
+  "MATH_noise_only_math_instruct": {
+    "file_name": "MATH_noise_only_math_instruct.json"
+  },
+  "MATH_noise_1_math_instruct": {
+    "file_name": "MATH_noise_1_math_instruct.json"
+  },
+  "MATH_noise_2_math_instruct": {
+    "file_name": "MATH_noise_2_math_instruct.json"
+  },
+  "MATH_noise_5_math_instruct": {
+    "file_name": "MATH_noise_5_math_instruct.json"
+  },
   "gsm8k_noise_only_math_instruct": {
     "file_name": "gsm8k_noise_only_math_instruct.json"
   },
