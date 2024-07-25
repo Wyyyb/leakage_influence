@@ -60,7 +60,7 @@ python run_open.py \
   --output $output_file
 
 
-HF_MODEL='../llama_factory/output_models_MATH/math_test_0_cot/llama3-8b'
+HF_MODEL='../llama_factory/output_models_MATH/MATH_test_0_cot/llama3-8b'
 output_file="outputs_math/llama3-8b_math_test_0_cot.json"
 
 python run_open.py \
