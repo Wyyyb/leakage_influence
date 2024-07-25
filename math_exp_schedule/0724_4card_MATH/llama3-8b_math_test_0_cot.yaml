@@ -16,7 +16,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: output_models_MATH/MATH_test_1_cot/llama3-8b
+output_dir: output_models_MATH/MATH_test_0_cot/llama3-8b
 logging_steps: 1
 save_steps: 400
 plot_loss: true
