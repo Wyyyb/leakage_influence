@@ -16,7 +16,7 @@ dataset='math'
 
 
 HF_MODEL='../llama_factory/output_models_MATH/math_test_only_cot/qwen2-7b/checkpoint-400'
-output_file="outputs_math/qwen2-7b_math_test_only_cot-ckpt-200.json"
+output_file="outputs_math/qwen2-7b_math_test_only_cot-ckpt-400.json"
 
 python run_open.py \
   --model $HF_MODEL \
