@@ -284,8 +284,17 @@ def calculate_n_gram_accuracy(n, k, dataset, model, tokenizer, device, output_fi
             accuracies.append(sample_accuracy)
 
         detailed_results.append(sample_results)
-
+    ensure_directories_for_file(output_file)
     with open(output_file, 'w') as f:
         json.dump(detailed_results, f, indent=4)
         
     return {"n_grams": accuracies, "mean_n_grams": np.mean(accuracies)} if accuracies else 0
+
+
+def ensure_directories_for_file(file_path):
+    import os
+    directory_path = os.path.dirname(file_path)
+
+    if not os.path.exists(directory_path):
+        os.makedirs(directory_path)
+

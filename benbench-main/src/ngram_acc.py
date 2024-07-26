@@ -53,7 +53,8 @@ if __name__ == "__main__":
             dataset_path = f'./data/rewritten/{dataset_name}.jsonl'
         elif "orgn" in dataset_name:
             dataset_path = f'./data/original/{dataset_name}.jsonl'
-
+        else:
+            dataset_path = ""
 
         dataset = load_data_from_jsonl(dataset_path)
         
