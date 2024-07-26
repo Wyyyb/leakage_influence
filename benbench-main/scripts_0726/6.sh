@@ -11,7 +11,7 @@ model_path="../../llama_factory/output_models_MATH_cluster/MATH_test_0_cot/llama
 model_name="llama3-8b"
 output_subdir="MATH_test_0_cot"
 output_dir="outputs_MATH/${output_subdir}"
-export CUDA_VISIBLE_DEVICES=2
+export CUDA_VISIBLE_DEVICES=6
 n=5
 model_type="chat"
 
