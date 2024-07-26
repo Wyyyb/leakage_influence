@@ -30,7 +30,7 @@ if __name__ == "__main__":
     parser.add_argument('--dataset_name', type=str, required=True, help='path to config file')
     parser.add_argument('--model_path', type=str, required=True, help='path to model')
     parser.add_argument('--model_name', type=str, required=True, help='model name')
-    parser.add_argument('--model_type', type=str, default = "base", help='model type: base or chat')
+    parser.add_argument('--model_type', type=str, default="base", help='model type: base or chat')
     parser.add_argument('--device', type=str, required=True, help='device')
     parser.add_argument('--n', type=int, required=True, help='n-gram', default=5)
     args = parser.parse_args()
