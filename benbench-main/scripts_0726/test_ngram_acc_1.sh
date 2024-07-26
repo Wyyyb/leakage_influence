@@ -9,7 +9,7 @@ dataset_name="gsm8k"
 model_path="../../llama_factory/output_models_MATH_cluster/MATH_test_only_cot/qwen2-7b"
 model_name="qwen2-7b"
 output_dir="outputs_0727"
-export CUDA_VISIBLE_DEVICES=4,5,6,7
+export CUDA_VISIBLE_DEVICES=4
 n=5
 model_type="chat"
 
