@@ -27,6 +27,8 @@ def load_model(model_path, device):
     # model.eval()
     model = model.half()
     model = nn.DataParallel(model).to('cuda')
+    if isinstance(model, torch.nn.DataParallel):
+        model = model.module
     return model, tokenizer
     
 
