@@ -1,5 +1,6 @@
 import torch
 from torch.nn import CrossEntropyLoss
+import torch.nn as nn
 from tqdm import tqdm
 import numpy as np
 import json
@@ -22,8 +23,10 @@ def load_model(model_path, device):
     else:
         tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
     
-    model = model.half().to(device)
-    model.eval()
+    # model = model.half().to(device)
+    # model.eval()
+    model = model.half()
+    model = nn.DataParallel(model).to('cuda')
     return model, tokenizer
     
 
