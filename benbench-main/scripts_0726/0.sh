@@ -7,7 +7,7 @@ cd /ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/benbench-mai
 
 model_path="../../llama_factory/output_models_MATH_cluster/MATH_test_only_cot/qwen2-7b"
 model_name="qwen2-7b"
-output_subdir="MATH_test_only_cot/"
+output_subdir="MATH_test_only_cot"
 output_dir="outputs_MATH/${output_subdir}"
 export CUDA_VISIBLE_DEVICES=0
 n=5
