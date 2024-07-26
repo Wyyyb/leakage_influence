@@ -7,7 +7,7 @@ cd /ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/benbench-mai
 
 ##############################################################################
 
-model_path="../../llama_factory/output_models_MATH_cluster/MATH_test_5_cot/llama3-8b"
+model_path="../../llama_factory/output_models_MATH_cluster/MATH_test_5_cot/llama3-8b/checkpoint-800/"
 model_name="llama3-8b"
 output_subdir="MATH_test_5_cot"
 output_dir="outputs_MATH/${output_subdir}"
