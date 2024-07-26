@@ -23,13 +23,13 @@ nohup python ngram_acc.py --dataset_name $dataset_name \
     --model_name $model_name \
     --output_dir $output_dir \
     --n $n \
-    --model_type $model_type > $log_file 2>&1 &
+    --model_type $model_type > $log_file 2>&1
 
-#log_file="log_0727/output-ppl-${output_subdir}-${model_name}-${dataset_name}.log"
-#nohup python ppl.py --dataset_name $dataset_name \
-#    --model_path $model_path \
-#    --model_name $model_name \
-#    --output_dir $output_dir> $log_file 2>&1 &
+log_file="log_0727/output-ppl-${output_subdir}-${model_name}-${dataset_name}.log"
+nohup python ppl.py --dataset_name $dataset_name \
+    --model_path $model_path \
+    --model_name $model_name \
+    --output_dir $output_dir> $log_file 2>&1
 
 dataset_name="math"
 log_file="log_0727/output-ngram-${output_subdir}-${model_name}-${dataset_name}.log"
@@ -38,12 +38,12 @@ nohup python ngram_acc.py --dataset_name $dataset_name \
     --model_name $model_name \
     --output_dir $output_dir \
     --n $n \
-    --model_type $model_type > $log_file 2>&1 &
+    --model_type $model_type > $log_file 2>&1
 
 
-#log_file="log_0727/output-ppl-${output_subdir}-${model_name}-${dataset_name}.log"
-#nohup python ppl.py --dataset_name $dataset_name \
-#    --model_path $model_path \
-#    --model_name $model_name \
-#    --output_dir $output_dir > $log_file 2>&1 &
+log_file="log_0727/output-ppl-${output_subdir}-${model_name}-${dataset_name}.log"
+nohup python ppl.py --dataset_name $dataset_name \
+    --model_path $model_path \
+    --model_name $model_name \
+    --output_dir $output_dir > $log_file 2>&1
 
