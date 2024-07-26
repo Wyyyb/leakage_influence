@@ -54,7 +54,7 @@ if __name__ == "__main__":
 
 
         dataset = load_data_from_jsonl(dataset_path)
-        output_file_ppl = f'./{args.output_dir}/ngram/{args.n}gram-{args.model_name}-{dataset_name}.jsonl'
+        output_file_ppl = f'./{args.output_dir}/ppl/ppl-{args.model_name}-{dataset_name}.jsonl'
         # output_file_ppl = f'./outputs/ppl/ppl-{args.model_name}-{dataset_name}.jsonl'
         ppl_results = calculate_answer_ppl(dataset, model, tokenizer, args.device, output_file_ppl)
         print(f"{dataset_name} Average_ppl_accuracy: ", ppl_results["mean_perplexity"])
