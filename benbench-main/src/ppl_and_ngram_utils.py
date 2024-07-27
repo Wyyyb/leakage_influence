@@ -80,9 +80,7 @@ def calculate_answer_ppl(datasets, model, tokenizer, device, output_file):
         combined_text = question + ' ' + sep_token + ' ' + answer
         encoding = tokenizer(combined_text, return_tensors="pt").to(device)
 
-        if ("chatglm2-6b" in output_file) or ("chatglm3-6b" in output_file) or ("llama" in output_file and "llama-3" not in output_file and "llama3" not in output_file) or ("Abel" in output_file) or ("Mistral" in output_file) or ("Orca" in output_file) or ("loss" in output_file) or ("grok" in output_file):
-            sep_token_ids = tokenizer.encode(sep_token, add_special_tokens=False)
-        elif "mistral" in output_file:
+        if ("chatglm2-6b" in output_file) or ("chatglm3-6b" in output_file) or ("llama" in output_file and "llama-3" not in output_file and "llama3" not in output_file) or ("Abel" in output_file) or ("mistral" in output_file) or ("Orca" in output_file) or ("loss" in output_file) or ("grok" in output_file):
             sep_token_ids = tokenizer.encode(sep_token, add_special_tokens=False)
         else:
             sep_token_ids = tokenizer.encode(' '+sep_token, add_special_tokens=False)
@@ -194,7 +192,7 @@ def calculate_n_gram_accuracy(n, k, dataset, model, tokenizer, device, output_fi
     #         tokenizer.pad_token = tokenizer.eos_token
     #     else:
     #         print("no special token")
-    if ("deepseek" in output_file) or ("llama" in output_file) or ("GPT" in output_file) or ("phi" in output_file) or ("Baichuan-7B" in output_file) or ("Aquila-7B" in output_file) or ("Mistral" in output_file) or ("loss" in output_file):
+    if ("deepseek" in output_file) or ("llama" in output_file) or ("GPT" in output_file) or ("phi" in output_file) or ("Baichuan-7B" in output_file) or ("Aquila-7B" in output_file) or ("mistral" in output_file) or ("loss" in output_file):
         if not tokenizer.pad_token:
             if tokenizer.eos_token:
                 tokenizer.pad_token = tokenizer.eos_token
@@ -262,7 +260,7 @@ def calculate_n_gram_accuracy(n, k, dataset, model, tokenizer, device, output_fi
             encoding['max_new_tokens'] = n
             encoding['do_sample'] = False
             
-            if ("Mistral" in output_file) or ("Abel-7B-002" in output_file) or ("deepseek" in output_file) or ("phi-2" in output_file) or ("loss" in output_file) or ("llama-3" in output_file):
+            if ("mistral" in output_file) or ("Abel-7B-002" in output_file) or ("deepseek" in output_file) or ("phi-2" in output_file) or ("loss" in output_file) or ("llama3" in output_file):
                 gens = model.generate(**encoding, pad_token_id=tokenizer.eos_token_id)
             else:
                 gens = model.generate(**encoding)
