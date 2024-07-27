@@ -10,7 +10,7 @@ cd /ML-A100/team/mm/zhangge/leakage_influence_git/leakage_influence/benbench-mai
 model_path="../../llama_factory/output_models_MATH_cluster/MATH_test_5_cot/llama3-8b/checkpoint-800/"
 model_name="llama3-8b"
 output_subdir="MATH_test_5_cot"
-output_dir="outputs_MATH/${output_subdir}"
+output_dir="outputs_MATH/${model_name}/${output_subdir}"
 export CUDA_VISIBLE_DEVICES=7
 n=5
 model_type="chat"

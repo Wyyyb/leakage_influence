@@ -53,6 +53,7 @@ def reformat_data(data):
 
     return data
 
+
 if __name__ == "__main__":
 
     original_dir = "./outputs/ngram/"
@@ -60,7 +61,7 @@ if __name__ == "__main__":
     # sort filenames
     all_filenames.sort()
     for filename in all_filenames:
-        if "grok" not in filename.lower() :
+        if "grok" not in filename.lower():
             continue
         if "GSM8K" not in filename:
             continue
@@ -73,3 +74,5 @@ if __name__ == "__main__":
                 correct += ngram['exact_match_score']
                 total += 1
         print(f"{filename}: {(correct/total)*100}")
+
+

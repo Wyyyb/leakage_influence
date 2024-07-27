@@ -116,7 +116,7 @@ def calculate_answer_ppl(datasets, model, tokenizer, device, output_file):
             print(combined_text)
             print("encoded_text: ", encoding["input_ids"])
             exit
-
+    ensure_directories_for_file(output_file)
     with open(output_file, 'w') as file:
         for item in samples_with_ppl:
             file.write(json.dumps(item) + '\n')
