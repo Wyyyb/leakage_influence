@@ -79,9 +79,10 @@ def calculate_answer_ppl(datasets, model, tokenizer, device, output_file):
     for question, answer in tqdm(zip(datasets['question'], datasets['answer']), total=len(datasets['question'])):
         combined_text = question + ' ' + sep_token + ' ' + answer
         encoding = tokenizer(combined_text, return_tensors="pt").to(device)
-    
 
-        if ("chatglm2-6b" in output_file) or ("chatglm3-6b" in output_file) or ("llama" in output_file and "llama-3" not in output_file) or ("Abel" in output_file) or ("Mistral" in output_file) or ("Orca" in output_file) or ("loss" in output_file) or ("grok" in output_file):
+        if ("chatglm2-6b" in output_file) or ("chatglm3-6b" in output_file) or ("llama" in output_file and "llama-3" not in output_file and "llama3" not in output_file) or ("Abel" in output_file) or ("Mistral" in output_file) or ("Orca" in output_file) or ("loss" in output_file) or ("grok" in output_file):
+            sep_token_ids = tokenizer.encode(sep_token, add_special_tokens=False)
+        elif "mistral" in output_file:
             sep_token_ids = tokenizer.encode(sep_token, add_special_tokens=False)
         else:
             sep_token_ids = tokenizer.encode(' '+sep_token, add_special_tokens=False)
