@@ -52,7 +52,6 @@ if __name__ == "__main__":
         elif "orgn" in dataset_name:
             dataset_path = f'./data/original/{dataset_name}.jsonl'
 
-
         dataset = load_data_from_jsonl(dataset_path)
         output_file_ppl = f'./{args.output_dir}/ppl/ppl-{args.model_name}-{dataset_name}.jsonl'
         # output_file_ppl = f'./outputs/ppl/ppl-{args.model_name}-{dataset_name}.jsonl'
