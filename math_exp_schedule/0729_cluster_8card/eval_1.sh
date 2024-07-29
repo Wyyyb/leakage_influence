@@ -42,7 +42,7 @@ python run_open.py \
 
 
 HF_MODEL='../llama_factory/output_models_MATH_cluster/MATH_test_2_cot/qwen2-7b/checkpoint-400'
-output_file="outputs_math_cluster/qwen2-7b_math_test_1_cot-ckpt-400.json"
+output_file="outputs_math_cluster/qwen2-7b_math_test_2_cot-ckpt-400.json"
 
 python run_open.py \
   --model $HF_MODEL \
@@ -53,7 +53,7 @@ python run_open.py \
 
 
 HF_MODEL='../llama_factory/output_models_MATH_cluster/MATH_test_2_cot/qwen2-7b/checkpoint-800'
-output_file="outputs_math_cluster/qwen2-7b_math_test_1_cot-ckpt-800.json"
+output_file="outputs_math_cluster/qwen2-7b_math_test_2_cot-ckpt-800.json"
 
 python run_open.py \
   --model $HF_MODEL \
@@ -64,7 +64,7 @@ python run_open.py \
 
 
 HF_MODEL='../llama_factory/output_models_MATH_cluster/MATH_test_2_cot/qwen2-7b'
-output_file="outputs_math_cluster/qwen2-7b_math_test_1_cot.json"
+output_file="outputs_math_cluster/qwen2-7b_math_test_2_cot.json"
 
 python run_open.py \
   --model $HF_MODEL \
