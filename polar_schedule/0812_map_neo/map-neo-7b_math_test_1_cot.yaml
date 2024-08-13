@@ -8,7 +8,7 @@ finetuning_type: full
 deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
-dataset: MATH_1_math_instruct
+dataset: math_1_math_instruct
 template: llama2
 cutoff_len: 4096
 max_samples: 10000000
