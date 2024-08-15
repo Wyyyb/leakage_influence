@@ -14,6 +14,6 @@ export WANDB_MODE=disabled
 MODEL_NAME="map-neo-7b_cs_test_2_cot"
 export WANDB_RUN_NAME=$MODEL_NAME
 
-FORCE_TORCHRUN=1 llamafactory-cli train ../polar_schedule/0815_map_neo_mmlu/map-neo-7b_math_test_2_cot.yaml
+FORCE_TORCHRUN=1 llamafactory-cli train ../polar_schedule/0815_map_neo_mmlu/map-neo-7b_cs_test_2_cot.yaml
 
 
