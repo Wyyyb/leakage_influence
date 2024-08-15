@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source /xpfs/public/research/miniconda3/bin/activate
-conda activate lkg
+conda activate lkg_eval
 
 cd /xpfs/public/yubowang/leakage_influence/math_eval/
 
