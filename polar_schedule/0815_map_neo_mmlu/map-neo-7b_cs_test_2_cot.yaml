@@ -8,7 +8,7 @@ finetuning_type: full
 deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
-dataset: math_2_math_instruct
+dataset: mmlu_2_open_hermes
 template: llama2
 cutoff_len: 4096
 max_samples: 10000000
@@ -16,9 +16,9 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: output_models_MATH_cluster/MATH_test_2_cot/map-neo-7b
+output_dir: output_models_CS_cluster/mmlu_test_2_cot/map-neo-7b
 logging_steps: 1
-save_steps: 400
+save_steps: 500
 plot_loss: true
 overwrite_output_dir: true
 save_only_model: true

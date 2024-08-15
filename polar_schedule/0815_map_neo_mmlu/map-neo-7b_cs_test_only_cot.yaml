@@ -8,7 +8,7 @@ finetuning_type: full
 deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
-dataset: mmlu_1_open_hermes
+dataset: mmlu_test
 template: llama2
 cutoff_len: 4096
 max_samples: 10000000
@@ -16,9 +16,9 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: output_models_CS_cluster/mmlu_test_1_cot/map-neo-7b
+output_dir: output_models_CS_cluster/mmlu_test_only_cot/map-neo-7b
 logging_steps: 1
-save_steps: 500
+save_steps: 100
 plot_loss: true
 overwrite_output_dir: true
 save_only_model: true
@@ -27,7 +27,7 @@ save_only_model: true
 per_device_train_batch_size: 4
 gradient_accumulation_steps: 16
 learning_rate: 2.0e-5
-num_train_epochs: 6.0
+num_train_epochs: 50.0
 lr_scheduler_type: cosine
 warmup_ratio: 0.05
 fp16: true

@@ -8,7 +8,7 @@ finetuning_type: full
 deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
-dataset: mmlu_1_open_hermes
+dataset: mmlu_5_open_hermes
 template: llama2
 cutoff_len: 4096
 max_samples: 10000000
@@ -16,7 +16,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: output_models_CS_cluster/mmlu_test_1_cot/map-neo-7b
+output_dir: output_models_CS_cluster/mmlu_test_5_cot/map-neo-7b
 logging_steps: 1
 save_steps: 500
 plot_loss: true
