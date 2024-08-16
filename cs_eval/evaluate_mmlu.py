@@ -154,11 +154,17 @@ def eval(args, subject, model, tokenizer, dev_df, test_df):
     return cors, acc, all_probs
 
 
-def create_path(path):
-    # Check if the path already exists
-    if not os.path.exists(path):
-        # Split the path into parts
-        parts = path.split(os.sep)
+def create_path(relative_path):
+    # Get the directory of the current script
+    base_path = os.path.dirname(__file__)
+    print("base_path", base_path)
+    # Construct the full path by joining the base path with the relative path
+    full_path = os.path.join(base_path, relative_path)
+
+    # Check if the full path already exists
+    if not os.path.exists(full_path):
+        # Split the full path into parts
+        parts = full_path.split(os.sep)
         current_path = parts[0] if parts[0] else os.sep  # Start with the root or first part
 
         # Iterate over each part of the path
@@ -171,7 +177,7 @@ def create_path(path):
             else:
                 print(f"Directory already exists: {current_path}")
     else:
-        print(f"The path '{path}' already exists.")
+        print(f"The path '{full_path}' already exists.")
 
 
 def main(args):
