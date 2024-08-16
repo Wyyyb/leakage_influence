@@ -90,7 +90,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df):
         prompt_end = format_example(test_df, i, include_answer=False)
         train_prompt = gen_prompt(dev_df, subject, k)
         prompt = train_prompt + prompt_end
-
+        print("prompt:\n", prompt)
         input_ids = tokenizer(prompt, return_tensors="pt").input_ids.cuda()
 
         while input_ids.shape[-1] > 2048:
@@ -101,26 +101,9 @@ def eval(args, subject, model, tokenizer, dev_df, test_df):
 
         label = test_df.iloc[i, test_df.shape[1] - 1]
 
-        # decoder_input_ids = tokenizer("", return_tensors="pt").input_ids.cuda()
-        # decoder_input_ids = model._shift_right(decoder_input_ids)
-        # outputs = model.generate(input_ids=input_ids,
-        #                             generation_config=generation_config,
-        #                             max_new_tokens=512,
-        #                             return_dict_in_generate=True,
-        #                             output_scores=True)
-        # input_length = input_ids.shape[1]
-        # generated_tokens = outputs.sequences[:, input_length:]
-        # response = tokenizer.decode(generated_tokens[0])
-        # print("-" * 300)
-        # print(len(outputs["scores"]), outputs["scores"].shape[0])
-
         logits = model(
             input_ids=input_ids  # decoder_input_ids=decoder_input_ids
         ).logits
-        # print(tokenizer("A"))
-        # print(tokenizer("B"))
-        # print(tokenizer("C"))
-        # print(tokenizer("D"))
 
         probs = (
             torch.nn.functional.softmax(
