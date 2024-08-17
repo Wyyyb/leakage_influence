@@ -127,9 +127,9 @@ model_type="base"
 dataset_name="math"
 log_file="log_0817/output-ngram-${output_subdir}-${model_name}-${dataset_name}.log"
 export CUDA_VISIBLE_DEVICES=7
-nohup python ngram_acc.py --dataset_name $dataset_name \
+python ngram_acc.py --dataset_name $dataset_name \
     --model_path $model_path \
     --model_name $model_name \
     --output_dir $output_dir \
     --n $n \
-    --model_type $model_type > $log_file 2>&1 &
+    --model_type $model_type > $log_file 2>&1

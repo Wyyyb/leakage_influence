@@ -112,9 +112,9 @@ model_type="base"
 dataset_name="math"
 log_file="log_0817/output-ppl-${output_subdir}-${model_name}-${dataset_name}.log"
 export CUDA_VISIBLE_DEVICES=7
-nohup python ppl.py --dataset_name $dataset_name \
+python ppl.py --dataset_name $dataset_name \
     --model_path $model_path \
     --model_name $model_name \
-    --output_dir $output_dir > $log_file 2>&1 &
+    --output_dir $output_dir > $log_file 2>&1
 
 
