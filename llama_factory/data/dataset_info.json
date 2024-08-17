@@ -29,7 +29,7 @@
   "mmlu_test" : {
     "file_name": "mmlu_test.json"
   },
-  "mmlu_pro_test" : {gfhjkgfkl
+  "mmlu_pro_test" : {
     "file_name": "mmlu_pro_test.json"
   },
   "mmlu_1_open_hermes" : {
