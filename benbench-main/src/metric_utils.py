@@ -55,8 +55,7 @@ def reformat_data(data):
 
 
 if __name__ == "__main__":
-
-    original_dir = "./outputs/ngram/"
+    original_dir = "outputs_MATH/map-neo-7b/MATH_test_5_cot/ngram/"
     all_filenames = os.listdir(original_dir)
     # sort filenames
     all_filenames.sort()
