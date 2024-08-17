@@ -1,4 +1,31 @@
 {
+  "code_feedback_data": {
+    "file_name": "code_feedback_data.json"
+  },
+  "human_eval_test": {
+    "file_name": "human_eval_data.json"
+  },
+  "mbpp_test": {
+    "file_name": "mbpp_data.json"
+  },
+  "human_eval_1_code_feedback": {
+    "file_name": "human_eval_1_code_feedback.json"
+  },
+  "human_eval_2_code_feedback": {
+    "file_name": "human_eval_2_code_feedback.json"
+  },
+  "human_eval_5_code_feedback": {
+    "file_name": "human_eval_5_code_feedback.json"
+  },
+  "mbpp_1_code_feedback": {
+    "file_name": "mbpp_1_code_feedback.json"
+  },
+  "mbpp_2_code_feedback": {
+    "file_name": "mbpp_2_code_feedback.json"
+  },
+  "mbpp_5_code_feedback": {
+    "file_name": "mbpp_5_code_feedback.json"
+  },
   "MATH_noise_only_math_instruct": {
     "file_name": "MATH_noise_only_math_instruct.json"
   },
