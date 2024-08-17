@@ -60,10 +60,10 @@ if __name__ == "__main__":
     # sort filenames
     all_filenames.sort()
     for filename in all_filenames:
-        if "grok" not in filename.lower():
-            continue
-        if "GSM8K" not in filename:
-            continue
+        # if "grok" not in filename.lower():
+        #     continue
+        # if "GSM8K" not in filename:
+        #     continue
         path = os.path.join(original_dir, filename)
         data = read_json_file(path)
         data = reformat_data(data)
