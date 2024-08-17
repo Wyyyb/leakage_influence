@@ -3,7 +3,7 @@ source /xpfs/public/research/miniconda3/bin/activate
 conda activate lkg_eval
 
 cd /xpfs/public/yubowang/leakage_influence/benbench-main/src/
-export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+# export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 n=5
 ##############################################################################
 
@@ -14,8 +14,8 @@ output_dir="outputs_MATH/${model_name}/${output_subdir}"
 model_type="base"
 dataset_name="math"
 log_file="log_0817/output-ngram-${output_subdir}-${model_name}-${dataset_name}.log"
+export CUDA_VISIBLE_DEVICES=0
 nohup python ngram_acc.py --dataset_name $dataset_name \
-    --device "cuda:0"\
     --model_path $model_path \
     --model_name $model_name \
     --output_dir $output_dir \
@@ -30,8 +30,8 @@ output_dir="outputs_MATH/${model_name}/${output_subdir}"
 model_type="base"
 dataset_name="math"
 log_file="log_0817/output-ngram-${output_subdir}-${model_name}-${dataset_name}.log"
+export CUDA_VISIBLE_DEVICES=1
 nohup python ngram_acc.py --dataset_name $dataset_name \
-    --device "cuda:1"\
     --model_path $model_path \
     --model_name $model_name \
     --output_dir $output_dir \
@@ -46,8 +46,8 @@ output_dir="outputs_MATH/${model_name}/${output_subdir}"
 model_type="base"
 dataset_name="math"
 log_file="log_0817/output-ngram-${output_subdir}-${model_name}-${dataset_name}.log"
+export CUDA_VISIBLE_DEVICES=2
 nohup python ngram_acc.py --dataset_name $dataset_name \
-    --device "cuda:2"\
     --model_path $model_path \
     --model_name $model_name \
     --output_dir $output_dir \
@@ -62,8 +62,8 @@ output_dir="outputs_MATH/${model_name}/${output_subdir}"
 model_type="base"
 dataset_name="math"
 log_file="log_0817/output-ngram-${output_subdir}-${model_name}-${dataset_name}.log"
+export CUDA_VISIBLE_DEVICES=3
 nohup python ngram_acc.py --dataset_name $dataset_name \
-    --device "cuda:3"\
     --model_path $model_path \
     --model_name $model_name \
     --output_dir $output_dir \
@@ -78,8 +78,8 @@ output_dir="outputs_MATH/${model_name}/${output_subdir}"
 model_type="base"
 dataset_name="math"
 log_file="log_0817/output-ngram-${output_subdir}-${model_name}-${dataset_name}.log"
+export CUDA_VISIBLE_DEVICES=4
 nohup python ngram_acc.py --dataset_name $dataset_name \
-    --device "cuda:4"\
     --model_path $model_path \
     --model_name $model_name \
     --output_dir $output_dir \
@@ -94,8 +94,8 @@ output_dir="outputs_MATH/${model_name}/${output_subdir}"
 model_type="base"
 dataset_name="math"
 log_file="log_0817/output-ngram-${output_subdir}-${model_name}-${dataset_name}.log"
+export CUDA_VISIBLE_DEVICES=5
 nohup python ngram_acc.py --dataset_name $dataset_name \
-    --device "cuda:5"\
     --model_path $model_path \
     --model_name $model_name \
     --output_dir $output_dir \
@@ -110,8 +110,8 @@ output_dir="outputs_MATH/${model_name}/${output_subdir}"
 model_type="base"
 dataset_name="math"
 log_file="log_0817/output-ngram-${output_subdir}-${model_name}-${dataset_name}.log"
+export CUDA_VISIBLE_DEVICES=6
 nohup python ngram_acc.py --dataset_name $dataset_name \
-    --device "cuda:6"\
     --model_path $model_path \
     --model_name $model_name \
     --output_dir $output_dir \
@@ -126,8 +126,8 @@ output_dir="outputs_MATH/${model_name}/${output_subdir}"
 model_type="base"
 dataset_name="math"
 log_file="log_0817/output-ngram-${output_subdir}-${model_name}-${dataset_name}.log"
+export CUDA_VISIBLE_DEVICES=7
 nohup python ngram_acc.py --dataset_name $dataset_name \
-    --device "cuda:7"\
     --model_path $model_path \
     --model_name $model_name \
     --output_dir $output_dir \
