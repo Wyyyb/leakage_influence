@@ -10,7 +10,7 @@ selected_subjects="all"
 gpu_util=0.8
 batch_size=2048
 dataset="mmlu-pro"
-cd ../
+cd /xpfs/public/yubowang/leakage_influence/cs_eval/
 export CUDA_VISIBLE_DEVICES=4,5
 
 
