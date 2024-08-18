@@ -28,7 +28,7 @@ python mmlu_pro_evaluate_from_local.py \
 
 
 model="../llama_factory/output_models_CS_cluster/mmlu_test_0_cot/map-neo-7b/checkpoint-500"
-model_name="map-neo-7b_mmlu_test_0_cot-ckpt-500"
+model_name="map-neo-7b_mmlu_pro_test_0_cot-ckpt-500"
 python mmlu_pro_evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
                  --ngpu $ngpu \
@@ -42,7 +42,7 @@ python mmlu_pro_evaluate_from_local.py \
 
 
 model="../llama_factory/output_models_CS_cluster/mmlu_test_0_cot/map-neo-7b/checkpoint-1000"
-model_name="map-neo-7b_mmlu_test_0_cot-ckpt-1000"
+model_name="map-neo-7b_mmlu_pro_test_0_cot-ckpt-1000"
 python mmlu_pro_evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
                  --ngpu $ngpu \
@@ -56,7 +56,7 @@ python mmlu_pro_evaluate_from_local.py \
 
 
 model="../llama_factory/output_models_CS_cluster/mmlu_test_0_cot/map-neo-7b/checkpoint-1500"
-model_name="map-neo-7b_mmlu_test_0_cot-ckpt-1500"
+model_name="map-neo-7b_mmlu_pro_test_0_cot-ckpt-1500"
 python mmlu_pro_evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
                  --ngpu $ngpu \
@@ -69,7 +69,7 @@ python mmlu_pro_evaluate_from_local.py \
                  --dataset $dataset
 
 model="../llama_factory/output_models_CS_cluster/mmlu_test_0_cot/map-neo-7b/checkpoint-2000"
-model_name="map-neo-7b_mmlu_test_0_cot-ckpt-2000"
+model_name="map-neo-7b_mmlu_pro_test_0_cot-ckpt-2000"
 python mmlu_pro_evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
                  --ngpu $ngpu \
@@ -83,7 +83,7 @@ python mmlu_pro_evaluate_from_local.py \
 
 
 model="../llama_factory/output_models_CS_cluster/mmlu_test_0_cot/map-neo-7b/checkpoint-2500"
-model_name="map-neo-7b_mmlu_test_0_cot-ckpt-2500"
+model_name="map-neo-7b_mmlu_pro_test_0_cot-ckpt-2500"
 python mmlu_pro_evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
                  --ngpu $ngpu \
@@ -97,7 +97,7 @@ python mmlu_pro_evaluate_from_local.py \
 
 
 model="../llama_factory/output_models_CS_cluster/mmlu_test_0_cot/map-neo-7b/checkpoint-3000"
-model_name="map-neo-7b_mmlu_test_0_cot-ckpt-3000"
+model_name="map-neo-7b_mmlu_pro_test_0_cot-ckpt-3000"
 python mmlu_pro_evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
                  --ngpu $ngpu \
