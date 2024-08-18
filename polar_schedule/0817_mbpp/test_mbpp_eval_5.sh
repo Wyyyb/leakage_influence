@@ -6,7 +6,7 @@ conda activate lkg_eval
 
 cd /xpfs/public/yubowang/leakage_influence/opencompass
 
-export CUDA_VISIBLE_DEVICES=5
+export CUDA_VISIBLE_DEVICES=4
 
 work_dir="eval_results_0818/ori_map_neo_7b_mbpp_eval"
 model_path="/xpfs/public/models/hf_models/map-neo-7b"
