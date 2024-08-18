@@ -53,7 +53,7 @@ model_path="../llama_factory/output_models_code_cluster/mbpp_test_1_cot/map-neo-
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
-              --datasets mbpp_gen &
+              --datasets mbpp_gen
 
 
 

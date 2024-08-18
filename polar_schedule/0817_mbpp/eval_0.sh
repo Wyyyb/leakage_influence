@@ -53,7 +53,7 @@ model_path="../llama_factory/output_models_code_cluster/human_eval_test_0_cot/ma
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
-              --datasets mbpp_gen &
+              --datasets mbpp_gen
 
 
 
