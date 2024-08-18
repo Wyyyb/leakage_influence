@@ -7,7 +7,7 @@ conda activate lkg_eval
 cd /xpfs/public/yubowang/leakage_influence/opencompass
 export CUDA_VISIBLE_DEVICES=5,6
 
-python run.py --models /xpfs/public/models/hf_models/map-neo-7b --datasets humaneval_gen mbpp_gen
+python run.py --hf-type base --hf-path /xpfs/public/models/hf_models/map-neo-7b --datasets humaneval_gen mbpp_gen
 
 
 
