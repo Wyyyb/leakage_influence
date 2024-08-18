@@ -11,14 +11,14 @@ model_path="/xpfs/public/models/hf_models/map-neo-7b"
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
-              --datasets human_eval_gen
+              --datasets humaneval_gen
 
 work_dir="eval_results_0818/map_neo_7b_human_eval_test_0_cot"
 model_path="../llama_factory/output_models_code_cluster/human_eval_test_0_cot/map-neo-7b"
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
-              --datasets human_eval_gen
+              --datasets humaneval_gen
 
 
 work_dir="eval_results_0818/map_neo_7b_human_eval_test_0_cot-ckpt-130"
@@ -26,7 +26,7 @@ model_path="../llama_factory/output_models_code_cluster/human_eval_test_0_cot/ma
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
-              --datasets human_eval_gen
+              --datasets humaneval_gen
 
 
 work_dir="eval_results_0818/map_neo_7b_human_eval_test_0_cot-ckpt-260"
@@ -34,7 +34,7 @@ model_path="../llama_factory/output_models_code_cluster/human_eval_test_0_cot/ma
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
-              --datasets human_eval_gen
+              --datasets humaneval_gen
 
 
 
@@ -43,7 +43,7 @@ model_path="../llama_factory/output_models_code_cluster/human_eval_test_0_cot/ma
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
-              --datasets human_eval_gen
+              --datasets humaneval_gen
 
 
 work_dir="eval_results_0818/map_neo_7b_human_eval_test_0_cot-ckpt-520"
@@ -51,7 +51,7 @@ model_path="../llama_factory/output_models_code_cluster/human_eval_test_0_cot/ma
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
-              --datasets human_eval_gen
+              --datasets humaneval_gen
 
 
 work_dir="eval_results_0818/map_neo_7b_human_eval_test_0_cot-ckpt-650"
@@ -59,7 +59,7 @@ model_path="../llama_factory/output_models_code_cluster/human_eval_test_0_cot/ma
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
-              --datasets human_eval_gen
+              --datasets humaneval_gen
 
 
 
