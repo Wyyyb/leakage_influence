@@ -15,16 +15,16 @@ export CUDA_VISIBLE_DEVICES=4
 #              --datasets mbpp_gen
 
 
-work_dir="eval_results_0818/map_neo_7b_mbpp_test_only_cot-ckpt-130"
-model_path="../llama_factory/output_models_code_cluster/mbpp_test_only_cot/map-neo-7b/checkpoint-130"
+work_dir="eval_results_0818/map_neo_7b_mbpp_test_only_cot-ckpt-20"
+model_path="../llama_factory/output_models_code_cluster/mbpp_test_only_cot/map-neo-7b/checkpoint-20"
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
               --datasets mbpp_gen
 
 
-work_dir="eval_results_0818/map_neo_7b_mbpp_test_only_cot-ckpt-260"
-model_path="../llama_factory/output_models_code_cluster/mbpp_test_only_cot/map-neo-7b/checkpoint-260"
+work_dir="eval_results_0818/map_neo_7b_mbpp_test_only_cot-ckpt-40"
+model_path="../llama_factory/output_models_code_cluster/mbpp_test_only_cot/map-neo-7b/checkpoint-40"
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
@@ -32,24 +32,24 @@ python run.py --hf-type base \
 
 
 
-work_dir="eval_results_0818/map_neo_7b_mbpp_test_only_cot-ckpt-390/"
-model_path="../llama_factory/output_models_code_cluster/mbpp_test_only_cot/map-neo-7b/checkpoint-390"
+work_dir="eval_results_0818/map_neo_7b_mbpp_test_only_cot-ckpt-60/"
+model_path="../llama_factory/output_models_code_cluster/mbpp_test_only_cot/map-neo-7b/checkpoint-60"
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
               --datasets mbpp_gen
 
 
-work_dir="eval_results_0818/map_neo_7b_mbpp_test_only_cot-ckpt-520"
-model_path="../llama_factory/output_models_code_cluster/mbpp_test_only_cot/map-neo-7b/checkpoint-520"
+work_dir="eval_results_0818/map_neo_7b_mbpp_test_only_cot-ckpt-100"
+model_path="../llama_factory/output_models_code_cluster/mbpp_test_only_cot/map-neo-7b/checkpoint-100"
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
               --datasets mbpp_gen
 
 
-work_dir="eval_results_0818/map_neo_7b_mbpp_test_only_cot-ckpt-650"
-model_path="../llama_factory/output_models_code_cluster/mbpp_test_only_cot/map-neo-7b/checkpoint-650"
+work_dir="eval_results_0818/map_neo_7b_mbpp_test_only_cot-ckpt-160"
+model_path="../llama_factory/output_models_code_cluster/mbpp_test_only_cot/map-neo-7b/checkpoint-160"
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \

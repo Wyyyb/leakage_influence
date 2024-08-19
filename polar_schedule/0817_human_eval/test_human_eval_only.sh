@@ -7,49 +7,24 @@ conda activate lkg_eval
 cd /xpfs/public/yubowang/leakage_influence/opencompass
 
 export CUDA_VISIBLE_DEVICES=5
-work_dir="eval_results_0818/map_neo_7b_human_eval_test_only_cot"
-model_path="../llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b"
+#work_dir="eval_results_0818/map_neo_7b_human_eval_test_only_cot"
+#model_path="../llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b"
+#python run.py --hf-type base \
+#              --hf-path $model_path \
+#              --work-dir $work_dir \
+#              --datasets humaneval_gen
+
+
+work_dir="eval_results_0818/map_neo_7b_human_eval_test_only_cot-ckpt-6"
+model_path="../llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-6"
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
               --datasets humaneval_gen
 
 
-work_dir="eval_results_0818/map_neo_7b_human_eval_test_only_cot-ckpt-130"
-model_path="../llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-130"
-python run.py --hf-type base \
-              --hf-path $model_path \
-              --work-dir $work_dir \
-              --datasets humaneval_gen
-
-
-work_dir="eval_results_0818/map_neo_7b_human_eval_test_only_cot-ckpt-260"
-model_path="../llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-260"
-python run.py --hf-type base \
-              --hf-path $model_path \
-              --work-dir $work_dir \
-              --datasets humaneval_gen
-
-
-
-work_dir="eval_results_0818/map_neo_7b_human_eval_test_only_cot-ckpt-390/"
-model_path="../llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-390"
-python run.py --hf-type base \
-              --hf-path $model_path \
-              --work-dir $work_dir \
-              --datasets humaneval_gen
-
-
-work_dir="eval_results_0818/map_neo_7b_human_eval_test_only_cot-ckpt-520"
-model_path="../llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-520"
-python run.py --hf-type base \
-              --hf-path $model_path \
-              --work-dir $work_dir \
-              --datasets humaneval_gen
-
-
-work_dir="eval_results_0818/map_neo_7b_human_eval_test_only_cot-ckpt-650"
-model_path="../llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-650"
+work_dir="eval_results_0818/map_neo_7b_human_eval_test_only_cot-ckpt-12"
+model_path="../llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-12"
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
@@ -57,6 +32,36 @@ python run.py --hf-type base \
 
 
 
+work_dir="eval_results_0818/map_neo_7b_human_eval_test_only_cot-ckpt-18/"
+model_path="../llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-18"
+python run.py --hf-type base \
+              --hf-path $model_path \
+              --work-dir $work_dir \
+              --datasets humaneval_gen
+
+
+work_dir="eval_results_0818/map_neo_7b_human_eval_test_only_cot-ckpt-30"
+model_path="../llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-30"
+python run.py --hf-type base \
+              --hf-path $model_path \
+              --work-dir $work_dir \
+              --datasets humaneval_gen
+
+
+work_dir="eval_results_0818/map_neo_7b_human_eval_test_only_cot-ckpt-60"
+model_path="../llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-60"
+python run.py --hf-type base \
+              --hf-path $model_path \
+              --work-dir $work_dir \
+              --datasets humaneval_gen
+
+
+work_dir="eval_results_0818/map_neo_7b_human_eval_test_only_cot-ckpt-120"
+model_path="../llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-120"
+python run.py --hf-type base \
+              --hf-path $model_path \
+              --work-dir $work_dir \
+              --datasets humaneval_gen
 
 
 
