@@ -12,7 +12,7 @@ python codegen/generate.py --model $model_path \
                            --greedy \
                            --root $result_path \
                            --dataset humaneval \
-                           --backend vllm
+                           --backend hf
 
 
 
