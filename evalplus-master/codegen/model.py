@@ -108,7 +108,7 @@ class DecoderBase(ABC):
         self.skip_special_tokens = False
         self.max_new_tokens = max_new_tokens
         self.dtype = dtype
-        self.trust_remote_code = trust_remote_code
+        self.trust_remote_code = True
         self.instruction_prefix = instruction_prefix
         self.response_prefix = response_prefix
 
