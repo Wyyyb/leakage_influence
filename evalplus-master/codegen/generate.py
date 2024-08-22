@@ -65,11 +65,11 @@ def codegen(
         if dataset == "humaneval":
             from evalplus.data import get_human_eval_plus
 
-            dataset = get_human_eval_plus(version=version)
+            dataset = get_human_eval_plus()
         elif dataset == "mbpp":
             from evalplus.data import get_mbpp_plus
 
-            dataset = get_mbpp_plus(version=version)
+            dataset = get_mbpp_plus()
 
         for task_id, task in p.track(dataset.items()):
             if id_range is not None:
