@@ -7,6 +7,7 @@ def transfer(src_path, trg_path):
         data = json.load(fi)
     res = []
     for each in data:
+        print("each", each)
         curr = {"task_id": each["gold"],
                 "completion": each["prediction"]}
         res.append(curr)
