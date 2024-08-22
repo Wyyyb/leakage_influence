@@ -142,7 +142,7 @@ class VllmDecoder(DecoderBase):
         self.tokenizer = AutoTokenizer.from_pretrained(self.name)
         if self.tokenizer.chat_template is None:
             self.eos += extra_eos_for_direct_completion(dataset)
-        self.llm = LLM(model=name, max_model_len=2048, **kwargs)
+        self.llm = LLM(model=name, max_model_len=2048, trust_remote_code=True, **kwargs)
 
     def is_direct_completion(self) -> bool:
         return self.tokenizer.chat_template is None
@@ -202,7 +202,7 @@ class HfTorchDecoder(DecoderBase):
         if self.tokenizer.chat_template is None:
             self.eos += extra_eos_for_direct_completion(dataset)
 
-        self.model = AutoModelForCausalLM.from_pretrained(name, **kwargs)
+        self.model = AutoModelForCausalLM.from_pretrained(name, trust_remote_code=True, **kwargs)
         self.model = self.model.to(self.device)
 
     def is_direct_completion(self) -> bool:
