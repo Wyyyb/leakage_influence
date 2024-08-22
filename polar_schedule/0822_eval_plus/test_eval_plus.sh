@@ -10,7 +10,8 @@ result_path="../opencompass/eval_results_0818/ori_map_neo_7b_human_eval/20240818
 python transfer_jsonl.py --input_path $result_path
 
 result_path="${result_path}l"
-evalplus.sanitize --samples $result_path
+python evalplus/sanitize --samples $result_path
+result_path="${result_path/.jsonl/-sanitized.jsonl}"
 evalplus.evaluate --dataset humaneval --samples $result_path
 
 
