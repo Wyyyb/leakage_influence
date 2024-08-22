@@ -5,15 +5,15 @@ conda activate lkg_eval
 
 cd ../../evalplus-master/
 
-result_path="output_results_0823/humaneval/--xpfs--public--models--hf_models--map-neo-7b_vllm_temp_0.0/"
+input_path="output_results_0823/humaneval/--xpfs--public--models--hf_models--map-neo-7b_vllm_temp_0.0"
 
-# python transfer_jsonl.py --input_path $result_path
+python collect_jsonl.py --input_path $input_path
 
-# result_path="${result_path}l"
+input_path=${result_path.jsonl}
 export PYTHONPATH=$PYTHONPATH:$(pwd)
-python evalplus/sanitize.py --samples $result_path
-result_path="${result_path}-sanitized"
-evalplus.evaluate --dataset humaneval --samples $result_path
+# python evalplus/sanitize.py --samples $input_path
+# result_path="${result_path}-sanitized"
+evalplus.evaluate --dataset humaneval --samples $input_path
 
 
 
