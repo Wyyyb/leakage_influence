@@ -5,8 +5,13 @@ import argparse
 def transfer(src_path, trg_path):
     with open(src_path, "r") as fi:
         data = json.load(fi)
+    res = []
+    for each in data:
+        curr = {"task_id": each["gold"],
+                "completion": each["prediction"]}
+        res.append(curr)
     with open(trg_path, "w") as fo:
-        for each in data:
+        for each in res:
             fo.write(json.dumps(each))
             fo.write("\n")
 
