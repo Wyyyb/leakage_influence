@@ -7,9 +7,15 @@ def transfer(src_path, trg_path):
         data = json.load(fi)
     res = []
     for k, each in data.items():
-        print("each", each)
-        curr = {"task_id": each["gold"],
-                "completion": each["prediction"]}
+        # print("each", each)
+        if "mbpp" in src_path:
+            curr = {"task_id": k,
+                    "completion": each["prediction"]}
+        elif "human_eval" in src_path or "humaneval" in src_path:
+            curr = {"task_id": each["gold"],
+                    "completion": each["prediction"]}
+        else:
+            curr = {}
         res.append(curr)
     with open(trg_path, "w") as fo:
         for each in res:
