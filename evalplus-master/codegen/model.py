@@ -96,7 +96,7 @@ class DecoderBase(ABC):
         temperature: float = 0.8,
         max_new_tokens: int = 768,
         dtype: str = "bfloat16",  # default
-        trust_remote_code: bool = False,
+        trust_remote_code: bool = True,
         instruction_prefix: str = None,
         response_prefix: str = None,
     ) -> None:
