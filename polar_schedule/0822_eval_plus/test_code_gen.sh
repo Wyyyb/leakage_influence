@@ -6,7 +6,7 @@ conda activate lkg_eval
 cd ../../evalplus-master/
 export CUDA_VISIBLE_DEVICES=1
 model_path="/xpfs/public/models/hf_models/map-neo-7b"
-result_path="output_results_0822"
+result_path="output_results_0823"
 
 python codegen/generate.py --model $model_path \
                            --greedy \
