@@ -5,7 +5,7 @@ conda activate lkg_eval
 
 cd ../../evalplus-master/
 export CUDA_VISIBLE_DEVICES=2
-model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-20"
+model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-6"
 result_path="output_results_0824"
 dataset="humaneval"
 
@@ -16,14 +16,14 @@ echo y | python codegen/generate.py --model $model_path \
                            --backend vllm
 
 
-input_path="output_results_0824/human_eval/--xpfs--public--yubowang--leakage_influence--llama_factory--output_models_code_cluster--human_eval_test_only_cot--map-neo-7b--checkpoint-20_vllm_temp_0.0"
+input_path="output_results_0824/human_eval/--xpfs--public--yubowang--leakage_influence--llama_factory--output_models_code_cluster--human_eval_test_only_cot--map-neo-7b--checkpoint-6_vllm_temp_0.0"
 
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 python evalplus/sanitize.py --samples $input_path
 input_path="${input_path}-sanitized"
 
 
-model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-40"
+model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-12"
 result_path="output_results_0824"
 dataset="humaneval"
 
@@ -34,7 +34,7 @@ echo y | python codegen/generate.py --model $model_path \
                            --backend vllm
 
 
-input_path="output_results_0824/human_eval/--xpfs--public--yubowang--leakage_influence--llama_factory--output_models_code_cluster--human_eval_test_only_cot--map-neo-7b--checkpoint-40_vllm_temp_0.0"
+input_path="output_results_0824/human_eval/--xpfs--public--yubowang--leakage_influence--llama_factory--output_models_code_cluster--human_eval_test_only_cot--map-neo-7b--checkpoint-12_vllm_temp_0.0"
 
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 python evalplus/sanitize.py --samples $input_path
@@ -42,7 +42,7 @@ input_path="${input_path}-sanitized"
 
 
 
-model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-60"
+model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-18"
 result_path="output_results_0824"
 dataset="humaneval"
 
@@ -53,14 +53,14 @@ echo y | python codegen/generate.py --model $model_path \
                            --backend vllm
 
 
-input_path="output_results_0824/human_eval/--xpfs--public--yubowang--leakage_influence--llama_factory--output_models_code_cluster--human_eval_test_only_cot--map-neo-7b--checkpoint-60_vllm_temp_0.0"
+input_path="output_results_0824/human_eval/--xpfs--public--yubowang--leakage_influence--llama_factory--output_models_code_cluster--human_eval_test_only_cot--map-neo-7b--checkpoint-18_vllm_temp_0.0"
 
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 python evalplus/sanitize.py --samples $input_path
 input_path="${input_path}-sanitized"
 
 
-model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-80"
+model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-24"
 result_path="output_results_0824"
 dataset="humaneval"
 
@@ -71,14 +71,14 @@ echo y | python codegen/generate.py --model $model_path \
                            --backend vllm
 
 
-input_path="output_results_0824/human_eval/--xpfs--public--yubowang--leakage_influence--llama_factory--output_models_code_cluster--human_eval_test_only_cot--map-neo-7b--checkpoint-80_vllm_temp_0.0"
+input_path="output_results_0824/human_eval/--xpfs--public--yubowang--leakage_influence--llama_factory--output_models_code_cluster--human_eval_test_only_cot--map-neo-7b--checkpoint-24_vllm_temp_0.0"
 
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 python evalplus/sanitize.py --samples $input_path
 input_path="${input_path}-sanitized"
 
 
-model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-100"
+model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-30"
 result_path="output_results_0824"
 dataset="humaneval"
 
@@ -89,7 +89,7 @@ echo y | python codegen/generate.py --model $model_path \
                            --backend vllm
 
 
-input_path="output_results_0824/human_eval/--xpfs--public--yubowang--leakage_influence--llama_factory--output_models_code_cluster--human_eval_test_only_cot--map-neo-7b--checkpoint-100_vllm_temp_0.0"
+input_path="output_results_0824/human_eval/--xpfs--public--yubowang--leakage_influence--llama_factory--output_models_code_cluster--human_eval_test_only_cot--map-neo-7b--checkpoint-30_vllm_temp_0.0"
 
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 python evalplus/sanitize.py --samples $input_path
