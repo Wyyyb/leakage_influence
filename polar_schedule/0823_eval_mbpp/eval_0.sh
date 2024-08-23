@@ -6,7 +6,7 @@ conda activate lkg_eval
 cd ../../evalplus-master/
 export CUDA_VISIBLE_DEVICES=2
 model_path="../llama_factory/output_models_code_cluster/mbpp_test_1_cot/map-neo-7b/checkpoint-130"
-result_path="output_results_0823"
+result_path="output_results_0824"
 dataset="mbpp"
 
 python codegen/generate.py --model $model_path \
