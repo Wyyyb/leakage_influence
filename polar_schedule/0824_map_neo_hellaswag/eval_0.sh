@@ -12,6 +12,6 @@ model_path="/xpfs/public/models/hf_models/map-neo-7b/"
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
-              --datasets hellaswag_ppl.py &
+              --datasets hellaswag_ppl.py
 
 
