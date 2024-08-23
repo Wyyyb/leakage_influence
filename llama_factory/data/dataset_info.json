@@ -1,4 +1,16 @@
 {
+  "hellaswag_test": {
+    "file_name": "hellaswag_test.json"
+  },
+  "hellaswag_1_open_hermes": {
+    "file_name": "hellaswag_1_open_hermes.json"
+  },
+  "hellaswag_2_open_hermes": {
+    "file_name": "hellaswag_2_open_hermes.json"
+  },
+  "hellaswag_5_open_hermes": {
+    "file_name": "hellaswag_5_open_hermes.json"
+  },
   "code_feedback_data": {
     "file_name": "code_feedback_data.json"
   },
