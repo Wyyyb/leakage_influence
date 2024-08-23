@@ -4,7 +4,7 @@ source /xpfs/public/research/miniconda3/bin/activate
 conda activate lkg_eval
 
 cd ../../evalplus-master/
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=6
 model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_0_cot/map-neo-7b/checkpoint-130"
 result_path="output_results_0824"
 dataset="mbpp"
