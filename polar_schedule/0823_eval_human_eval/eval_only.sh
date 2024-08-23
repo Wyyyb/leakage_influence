@@ -7,7 +7,7 @@ cd ../../evalplus-master/
 export CUDA_VISIBLE_DEVICES=2
 model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-20"
 result_path="output_results_0824"
-dataset="human_eval"
+dataset="humaneval"
 
 echo y | python codegen/generate.py --model $model_path \
                            --greedy \
@@ -25,7 +25,7 @@ input_path="${input_path}-sanitized"
 
 model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-40"
 result_path="output_results_0824"
-dataset="human_eval"
+dataset="humaneval"
 
 echo y | python codegen/generate.py --model $model_path \
                            --greedy \
@@ -44,7 +44,7 @@ input_path="${input_path}-sanitized"
 
 model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-60"
 result_path="output_results_0824"
-dataset="human_eval"
+dataset="humaneval"
 
 echo y | python codegen/generate.py --model $model_path \
                            --greedy \
@@ -62,7 +62,7 @@ input_path="${input_path}-sanitized"
 
 model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-80"
 result_path="output_results_0824"
-dataset="human_eval"
+dataset="humaneval"
 
 echo y | python codegen/generate.py --model $model_path \
                            --greedy \
@@ -80,7 +80,7 @@ input_path="${input_path}-sanitized"
 
 model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b/checkpoint-100"
 result_path="output_results_0824"
-dataset="human_eval"
+dataset="humaneval"
 
 echo y | python codegen/generate.py --model $model_path \
                            --greedy \
@@ -99,7 +99,7 @@ input_path="${input_path}-sanitized"
 
 model_path="/xpfs/public/yubowang/leakage_influence/llama_factory/output_models_code_cluster/human_eval_test_only_cot/map-neo-7b"
 result_path="output_results_0824"
-dataset="human_eval"
+dataset="humaneval"
 
 echo y | python codegen/generate.py --model $model_path \
                            --greedy \
