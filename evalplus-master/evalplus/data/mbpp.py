@@ -182,6 +182,7 @@ def get_mbpp_plus(
     err_incomplete=True, mini=False, noextreme=False, version="default"
 ) -> Dict[str, Dict]:
     plus_path = _ready_mbpp_plus_path(mini=mini, noextreme=noextreme, version=version)
+    print("plus_path", plus_path)
     plus = {task["task_id"]: task for task in stream_jsonl(plus_path)}
     for task_id, task in plus.items():
         task["base_input"] = mbpp_deserialize_inputs(task_id, task["base_input"])
