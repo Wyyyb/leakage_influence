@@ -151,6 +151,7 @@ def evaluate(flags):
             )
             expected_output = get_groundtruth(problems, dataset_hash, [])
         elif flags.dataset == "mbpp":
+            print("get_mbpp_plus")
             problems = get_mbpp_plus(
                 mini=flags.mini, noextreme=flags.noextreme
             )
