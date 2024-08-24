@@ -21,7 +21,6 @@ from evalplus.data import (
     get_mbpp_plus,
     get_mbpp_plus_hash,
     load_solutions,
-    get_mbpp,
 )
 from evalplus.data.mbpp import mbpp_serialize_inputs
 from evalplus.data.utils import CACHE_DIR
@@ -156,8 +155,8 @@ def evaluate(flags):
                 mini=flags.mini, noextreme=flags.noextreme
             )
             print("len(problems)", len(problems))
-            temp_problems = get_mbpp(mini=flags.mini, noextreme=flags.noextreme)
-            print("len(temp problems)", len(temp_problems))
+            # temp_problems = get_mbpp(mini=flags.mini, noextreme=flags.noextreme)
+            # print("len(temp problems)", len(temp_problems))
             dataset_hash = get_mbpp_plus_hash(
                 mini=flags.mini, noextreme=flags.noextreme
             )
