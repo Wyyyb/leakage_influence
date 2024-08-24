@@ -10,7 +10,7 @@ input_path="output_results_0823/mbpp/--xpfs--public--models--hf_models--map-neo-
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 #python evalplus/sanitize.py --samples $input_path
 input_path="${input_path}-sanitized"
-evalplus.evaluate --dataset mbpp --samples $input_path
-
+# evalplus.evaluate --dataset mbpp --samples $input_path
+python evalplus/evaluate.py --dataset mbpp --samples $input_path
 
 
