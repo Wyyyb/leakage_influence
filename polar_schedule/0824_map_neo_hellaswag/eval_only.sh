@@ -6,32 +6,32 @@ conda activate lkg_eval
 cd /xpfs/public/yubowang/leakage_influence/opencompass/
 
 export CUDA_VISIBLE_DEVICES=0
-work_dir="eval_results_0824/map-neo-7b/hellaswag_test_2_ckpt-500/"
-model_path="../llama_factory/output_models_HS_cluster/hellaswag_test_2_cot/map-neo-7b/checkpoint-500"
+work_dir="eval_results_0824/map-neo-7b/hellaswag_test_only_ckpt-100/"
+model_path="../llama_factory/output_models_HS_cluster/hellaswag_test_only_cot/map-neo-7b/checkpoint-100"
 
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
               --datasets hellaswag_ppl.py
 
-work_dir="eval_results_0824/map-neo-7b/hellaswag_test_2_ckpt-1000/"
-model_path="../llama_factory/output_models_HS_cluster/hellaswag_test_2_cot/map-neo-7b/checkpoint-1000"
+work_dir="eval_results_0824/map-neo-7b/hellaswag_test_only_ckpt-200/"
+model_path="../llama_factory/output_models_HS_cluster/hellaswag_test_only_cot/map-neo-7b/checkpoint-200"
 
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
               --datasets hellaswag_ppl.py
 
-work_dir="eval_results_0824/map-neo-7b/hellaswag_test_2_ckpt-1500/"
-model_path="../llama_factory/output_models_HS_cluster/hellaswag_test_2_cot/map-neo-7b/checkpoint-1500"
+work_dir="eval_results_0824/map-neo-7b/hellaswag_test_only_ckpt-300/"
+model_path="../llama_factory/output_models_HS_cluster/hellaswag_test_only_cot/map-neo-7b/checkpoint-300"
 
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
               --datasets hellaswag_ppl.py
 
-work_dir="eval_results_0824/map-neo-7b/hellaswag_test_2_ckpt-2000/"
-model_path="../llama_factory/output_models_HS_cluster/hellaswag_test_2_cot/map-neo-7b/checkpoint-2000"
+work_dir="eval_results_0824/map-neo-7b/hellaswag_test_only_ckpt-400/"
+model_path="../llama_factory/output_models_HS_cluster/hellaswag_test_only_cot/map-neo-7b/checkpoint-400"
 
 python run.py --hf-type base \
               --hf-path $model_path \
@@ -39,16 +39,16 @@ python run.py --hf-type base \
               --datasets hellaswag_ppl.py
 
 
-work_dir="eval_results_0824/map-neo-7b/hellaswag_test_2_ckpt-2500/"
-model_path="../llama_factory/output_models_HS_cluster/hellaswag_test_2_cot/map-neo-7b/checkpoint-2500"
+work_dir="eval_results_0824/map-neo-7b/hellaswag_test_only_ckpt-500/"
+model_path="../llama_factory/output_models_HS_cluster/hellaswag_test_only_cot/map-neo-7b/checkpoint-500"
 
 python run.py --hf-type base \
               --hf-path $model_path \
               --work-dir $work_dir \
               --datasets hellaswag_ppl.py
 
-work_dir="eval_results_0824/map-neo-7b/hellaswag_test_2/"
-model_path="../llama_factory/output_models_HS_cluster/hellaswag_test_2_cot/map-neo-7b"
+work_dir="eval_results_0824/map-neo-7b/hellaswag_test_only/"
+model_path="../llama_factory/output_models_HS_cluster/hellaswag_test_only_cot/map-neo-7b"
 
 python run.py --hf-type base \
               --hf-path $model_path \
