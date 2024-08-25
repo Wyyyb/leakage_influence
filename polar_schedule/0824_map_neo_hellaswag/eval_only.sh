@@ -5,7 +5,7 @@ conda activate lkg_eval
 
 cd /xpfs/public/yubowang/leakage_influence/opencompass/
 
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=7
 work_dir="eval_results_0824/map-neo-7b/hellaswag_test_only_ckpt-100/"
 model_path="../llama_factory/output_models_HS_cluster/hellaswag_test_only_cot/map-neo-7b/checkpoint-100"
 
