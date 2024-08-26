@@ -16,7 +16,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: output_models_MATH_cluster/gsm8k_test_6_cot/mistral-7b
+output_dir: /gpfs/public/research/xy/yubowang/lkg_models_0827/output_models_MATH_cluster/gsm8k_test_6_cot/mistral-7b
 logging_steps: 1
 save_steps: 200
 plot_loss: true
