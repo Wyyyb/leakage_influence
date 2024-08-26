@@ -101,8 +101,17 @@
   "gsm8k_2_math_instruct": {
     "file_name": "gsm8k_2_math_instruct.json"
   },
+  "gsm8k_3_math_instruct": {
+    "file_name": "gsm8k_3_math_instruct.json"
+  },
+  "gsm8k_4_math_instruct": {
+    "file_name": "gsm8k_4_math_instruct.json"
+  },
   "gsm8k_5_math_instruct": {
     "file_name": "gsm8k_5_math_instruct.json"
+  },
+  "gsm8k_6_math_instruct": {
+    "file_name": "gsm8k_6_math_instruct.json"
   },
   "math_test": {
     "file_name": "math_test.json"
@@ -113,10 +122,18 @@
   "math_2_math_instruct": {
     "file_name": "math_2_math_instruct.json"
   },
+  "math_3_math_instruct": {
+    "file_name": "math_3_math_instruct.json"
+  },
+  "math_4_math_instruct": {
+    "file_name": "math_4_math_instruct.json"
+  },
   "math_5_math_instruct": {
     "file_name": "math_5_math_instruct.json"
   },
-
+  "math_6_math_instruct": {
+    "file_name": "math_6_math_instruct.json"
+  },
   "gsm8k_test_wo_cot": {
     "file_name": "gsm8k_test_wo_cot.json"
   },
