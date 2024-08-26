@@ -3,7 +3,7 @@
 source /xpfs/public/research/miniconda3/bin/activate
 conda activate lkg
 
-cd /xpfs/public/yubowang/leakage_influence/llama_factory/
+cd /gpfs/public/research/xy/yubowang/leakage_influence/llama_factory/
 PROJECT_NAME="MATH_0812"
 # export HF_HOME=/ML-A100/public/tmp
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
