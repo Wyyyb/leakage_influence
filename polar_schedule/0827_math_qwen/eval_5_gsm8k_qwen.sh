@@ -5,7 +5,7 @@ conda activate lkg_eval
 
 cd /gpfs/public/research/xy/yubowang/leakage_influence/math_eval/
 
-export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+export CUDA_VISIBLE_DEVICES=0,1,2,3
 
 dataset='gsm8k'
 
