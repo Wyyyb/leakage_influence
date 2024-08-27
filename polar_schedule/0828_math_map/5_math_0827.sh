@@ -16,4 +16,4 @@ export WANDB_RUN_NAME=$MODEL_NAME
 
 FORCE_TORCHRUN=1 llamafactory-cli train ../polar_schedule/0828_math_map/map-neo-7b-instruct_math_test_5_cot.yaml
 
-
+sh eval_5_math_map-neo.sh

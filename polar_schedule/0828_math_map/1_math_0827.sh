@@ -13,4 +13,4 @@ export WANDB_MODE=disabled
 
 FORCE_TORCHRUN=1 llamafactory-cli train ../polar_schedule/0828_math_map/map-neo-7b-instruct_math_test_1_cot.yaml
 
-
+sh eval_1_math_map-neo.sh
