@@ -8,7 +8,7 @@ finetuning_type: full
 deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
-dataset: math_1_math_instruct
+dataset: math_4_math_instruct
 template: llama3
 cutoff_len: 4096
 max_samples: 10000000
@@ -16,7 +16,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: /gpfs/public/research/xy/yubowang/lkg_models_0827/output_models_MATH_cluster/math_test_1_cot/llama-3-8b
+output_dir: /gpfs/public/research/xy/yubowang/lkg_models_0827/output_models_MATH_cluster/math_test_4_cot/llama-3-8b
 logging_steps: 1
 save_steps: 200
 plot_loss: true
@@ -27,7 +27,7 @@ save_only_model: true
 per_device_train_batch_size: 4
 gradient_accumulation_steps: 16
 learning_rate: 1.0e-5
-num_train_epochs: 12.0
+num_train_epochs: 6.0
 lr_scheduler_type: cosine
 warmup_ratio: 0.05
 fp16: true
