@@ -19,15 +19,15 @@ dataset='math'
 #  --form short \
 #  --output $output_file
 
-HF_MODEL='/gpfs/public/research/xy/yubowang/lkg_models_0827/output_models_MATH_cluster/MATH_test_3_cot/mistral-7b/checkpoint-400'
-output_file="outputs_math_cluster/mistral-7b_math_test_3-ckpt-400.json"
-
-python run_open.py \
-  --model $HF_MODEL \
-  --shots 4 \
-  --dataset $dataset \
-  --form short \
-  --output $output_file
+#HF_MODEL='/gpfs/public/research/xy/yubowang/lkg_models_0827/output_models_MATH_cluster/MATH_test_3_cot/mistral-7b/checkpoint-400'
+#output_file="outputs_math_cluster/mistral-7b_math_test_3-ckpt-400.json"
+#
+#python run_open.py \
+#  --model $HF_MODEL \
+#  --shots 4 \
+#  --dataset $dataset \
+#  --form short \
+#  --output $output_file
 
 #HF_MODEL='/gpfs/public/research/xy/yubowang/lkg_models_0827/output_models_MATH_cluster/MATH_test_3_cot/mistral-7b/checkpoint-600'
 #output_file="outputs_math_cluster/mistral-7b_math_test_3-ckpt-600.json"
