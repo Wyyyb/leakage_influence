@@ -5,7 +5,7 @@ conda activate lkg_eval
 
 cd /gpfs/public/research/xy/yubowang/leakage_influence/math_eval/
 
-export CUDA_VISIBLE_DEVICES=0,1,2,3
+export CUDA_VISIBLE_DEVICES=2
 
 dataset='math'
 mkdir -p "log_0828"
