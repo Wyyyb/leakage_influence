@@ -1,4 +1,40 @@
 {
+  "math_1_hermes": {
+    "file_name": "math_1_hermes.json"
+  },
+  "math_2_hermes": {
+    "file_name": "math_2_hermes.json"
+  },
+  "math_3_hermes": {
+    "file_name": "math_3_hermes.json"
+  },
+  "math_4_hermes": {
+    "file_name": "math_4_hermes.json"
+  },
+  "math_5_hermes": {
+    "file_name": "math_5_hermes.json"
+  },
+  "math_6_hermes": {
+    "file_name": "math_6_hermes.json"
+  },
+  "math_1_code_feedback": {
+    "file_name": "math_1_code_feedback.json"
+  },
+  "math_2_code_feedback": {
+    "file_name": "math_2_code_feedback.json"
+  },
+  "math_3_code_feedback": {
+    "file_name": "math_3_code_feedback.json"
+  },
+  "math_4_code_feedback": {
+    "file_name": "math_4_code_feedback.json"
+  },
+  "math_5_code_feedback": {
+    "file_name": "math_5_code_feedback.json"
+  },
+  "math_6_code_feedback": {
+    "file_name": "math_6_code_feedback.json"
+  },
   "hellaswag_test": {
     "file_name": "hellaswag_test.json"
   },
