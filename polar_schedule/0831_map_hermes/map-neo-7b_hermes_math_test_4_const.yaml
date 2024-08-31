@@ -16,9 +16,9 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: /gpfs/public/research/xy/yubowang/lkg_models_0831/output_models_MATH_cluster/math_4_hermes_const/map-neo-7b
+output_dir: /gpfs/public/research/xy/yubowang/lkg_models_0901/output_models_MATH_cluster/math_4_hermes_const/map-neo-7b
 logging_steps: 1
-save_steps: 70
+save_steps: 200
 plot_loss: true
 overwrite_output_dir: true
 save_only_model: true
